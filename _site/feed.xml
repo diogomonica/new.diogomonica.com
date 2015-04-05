@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Diogo Monica</title>
+        <description>I lead Security @Docker, advise a handful of Startups and do Security Research. Follow @diogomonica on twitter or learn a little bit more about me.</description>
+        <link>//</link>
+        <atom:link href="//feed.xml" rel="self" type="application/rss+xml" />
+        <pubDate>Sat, 04 Apr 2015 18:35:20 -0700</pubDate>
+        <lastBuildDate>Sat, 04 Apr 2015 18:35:20 -0700</lastBuildDate>
+        <generator>Jekyll v2.5.3</generator>
+        
+            <item>
+                <title>Why go to React Week?</title>
+                <description>&lt;p&gt;When I was trying to rally some fellow developers to go with me to React Week in person, the average response went like this: “so what do they teach you there that you couldn’t learn online?”
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;justification&quot;&gt;Justification&lt;/h2&gt;
+&lt;p&gt;This is a really valid question and point, especially when trying to justify a $1000 ticket that doesn’t include the travel costs for a week. There are numerous online resources and training around react + flux. &lt;a href=&quot;https://egghead.io/articles/gentle-introduction-to-the-react-flux-architecture&quot;&gt;egghead.io&lt;/a&gt;, &lt;a href=&quot;https://scotch.io/tutorials/getting-to-know-flux-the-react-js-architecture&quot;&gt;scotch.io&lt;/a&gt; and even &lt;a href=&quot;http://facebook.github.io/react/docs/getting-started.html&quot;&gt;facebook’s react docs&lt;/a&gt; to name a few. What could possibly make it so beneficial that I would bite the bullet on the expenses?&lt;/p&gt;
+
+&lt;h2 id=&quot;the-experience&quot;&gt;The experience…&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/l0hYC2M.gif&quot; alt=&quot;skittles experience&quot; class=&quot;pull-right img-thumbnail&quot; /&gt;
+My response is pretty straight forward. I understand that everything they teach you could learn online. This I know from experience, since I have been hired in an area that I was self taught in. I am no stranger to picking up a new technology on the fly via online resources to become more valuable to the company and the project at hand.&lt;/p&gt;
+
+&lt;p&gt;Even though you could learn all of the things being taught online, there is a massive difference when you work firsthand with top notch developers in that area. Your learning is significantly accelerated, the material absorbs into your cognitive skills with less friction and you also pick up their “PRO” habits. I feel like the “PRO” habits alone are invaluable for obvious reasons.&lt;/p&gt;
+
+&lt;h2 id=&quot;habits-rub-off&quot;&gt;Habits rub off&lt;/h2&gt;
+&lt;p&gt;When you work closely with people who are smarter than you, it rubs off. If you become the smartest person on your team, it can become a problem because then your learning pace begins to slow down and can even come to a hault. This can be avoided if everyone on the team is continually growing and getting into situations where they can learn and work with people who are smarter than they are. This is where workshops can come in and really help refresh the development ecosystem in your work environment, which can bring out new ideas and innovations. It also helps that I am &lt;a href=&quot;/workshops/2015/02/14/all-in-on-react/&quot;&gt;all in on React&lt;/a&gt;.&lt;/p&gt;
+
+&lt;script src=&quot;https://www.wedgies.com/js/widgets.js&quot;&gt;&lt;/script&gt;
+&lt;noscript&gt;&lt;a href=&quot;https://www.wedgies.com/question/54ef1cb14b4477080000370e&quot;&gt;Overall which is better for learning, workshops or online resources?&lt;/a&gt;&lt;/noscript&gt;
+&lt;div class=&quot;wedgie-widget&quot; data-wd-pending=&quot;&quot; data-data-wd-type=&quot;embed&quot; data-wd-version=&quot;v1&quot; id=&quot;54ef1cb14b4477080000370e&quot; style=&quot;max-width: 640px; margin: 0px auto&quot;&gt;&lt;/div&gt;
+
+</description>
+                <pubDate>Thu, 26 Feb 2015 13:13:09 -0800</pubDate>
+                <link>//workshops/2015/02/26/why-go-to-react-week/</link>
+                <guid isPermaLink="true">//workshops/2015/02/26/why-go-to-react-week/</guid>
+                
+                
+                    <category>workshops</category>
+                
+            </item>
+        
+            <item>
+                <title>All in on React</title>
+                <description>&lt;p&gt;&lt;em&gt;I believe that React.js and flux architecture is where the industry is headed for years to come.&lt;/em&gt; I believe it so much that I scooped up an in-person ticket to &lt;a href=&quot;http://reactweek.com&quot;&gt;React Week&lt;/a&gt;. This is a big deal for me because it completely ruins my chance of getting a drone for my birthday in June, which I have wanted for years now.
+&lt;img src=&quot;http://i.imgur.com/6ptDNH9.gif&quot; alt=&quot;all in on react&quot; /&gt;
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;education-value&quot;&gt;Education value&lt;/h2&gt;
+&lt;p&gt;I feel like you can’t put at cap on continual education. If you love the field you are in you will most likely be a student of if your entire life. When I told my team leads at Twin Tech that I was considering going, their immediate response was very understanding towards the value of education. I feel like most companies, if they understand this value, will support and encourage their employee’s on going education.&lt;/p&gt;
+
+&lt;h2 id=&quot;job-security&quot;&gt;Job security&lt;/h2&gt;
+&lt;p&gt;Right now and previously on job boards, there is a bountiful search for MEAN stack developers. The MEAN stack has definitely been the cornerstone for the full stack Javascript industry, but I am predicting a transition is going to happen where job boards and recruiters will be predominately searching for React and flux developers in their full stack javascript queries. Getting hands on and fully absored with the technology and architecture gives me a great sense of job security for years to come. When new frameworks pop up, via the inevitable &lt;a href=&quot;http://www.breck-mckye.com/blog/2014/12/the-state-of-javascript-in-2015/&quot;&gt;Javascript framework churn&lt;/a&gt;, I imagine they will be in compliance with the architecture being taught from React and flux.&lt;/p&gt;
+
+&lt;h2 id=&quot;is-it-better&quot;&gt;Is it better?&lt;/h2&gt;
+&lt;p&gt;While job security is certainly nice, is React + flux actually better than current frameworks and typical application architecture? Short answer, yes(I may be biased…). Not just for Javascript but for other languages as well. The framework and architecture encourages self contained and re-usable components to build your application. Each component being concerned about it’s own state. At first this seems slower and counter intuitive(which is natural since we are conditioned by previous framework’s way of thinking), but you end up realizing how powerful it can be when buildig a scalable application.&lt;/p&gt;
+
+&lt;script src=&quot;https://www.wedgies.com/js/widgets.js&quot;&gt;&lt;/script&gt;
+&lt;noscript&gt;&lt;a href=&quot;https://www.wedgies.com/question/54ec98ed52b06d120000044c&quot;&gt;How will React + Flux Architecture impact the full stack Javascript industry?&lt;/a&gt;&lt;/noscript&gt;
+&lt;div class=&quot;wedgie-widget&quot; data-wd-pending=&quot;&quot; data-data-wd-type=&quot;embed&quot; data-wd-version=&quot;v1&quot; id=&quot;54ec98ed52b06d120000044c&quot; style=&quot;max-width: 640px; margin: 0px auto&quot;&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;scalable-apps&quot;&gt;Scalable apps&lt;/h2&gt;
+&lt;p&gt;What I mean by scalable is from a development perspective. Most companies will bring on new developers and they will be expected to be able to jump into an application and start developing. I can speak from experience, that when you are dealing with frameworks and an architecture that is not seperated into components, it is a total nightmare navigating and understanding the application. Throw in the background magic (aka convention over configuration) and you will certainly be swearing up a storm no matter who you are. Working with a component driven framework and forward moving architecture has made development in the long run significantly more productive. I admit my opinion of this is limited to what I currently know of React, but I plan to have a much better understanding of it after the &lt;a href=&quot;http://reactweek.com&quot;&gt;React Week workshop&lt;/a&gt;, which by the way is &lt;a href=&quot;/workshops/2015/02/26/why-go-to-react-week/&quot;&gt;totally worth it&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+                <pubDate>Sat, 14 Feb 2015 13:13:09 -0800</pubDate>
+                <link>//workshops/2015/02/14/all-in-on-react/</link>
+                <guid isPermaLink="true">//workshops/2015/02/14/all-in-on-react/</guid>
+                
+                
+                    <category>workshops</category>
+                
+            </item>
+        
+            <item>
+                <title>Creating installfont</title>
+                <description>&lt;h2 id=&quot;installing-system-fonts-is-trickier-than-you-would-think&quot;&gt;Installing system fonts is trickier than you would think&lt;/h2&gt;
+&lt;p&gt;At least that is the case for Windows OS. During early stage development of RenderEffects, I really did not put much thought into installing font on the system. At the time it seemed as trivial as copy/pasting into the font directory right? Nerp! Even if you give your Node program system privileges, it just will not work. It turns out the only way to do it is with Windows powershell scripting. That kind of turned me off from writing it myself, so I was hoping there would already be something available on npm or Github that I could use or at least modify. But, It appeared, I was the only person in need of a system font installation module.
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;system-tasks&quot;&gt;System tasks&lt;/h2&gt;
+&lt;p&gt;I feel like Node is well known for its capabilities with high i/o, which makes it a great candidate for web applications. You don’t really read articles about Node being used for system tasks, at least on a regular basis. So I was actually pretty interested in open sourcing a module that was aimed at doing a system task. I like the idea of advocating more system task modules for Node.&lt;/p&gt;
+
+&lt;h2 id=&quot;open-sourcing-installfont&quot;&gt;Open sourcing installfont&lt;/h2&gt;
+&lt;p&gt;It didn’t actually occur to me to open source the module and release it until I started looking for job in the full stack Javascript field. I was asked to provide a piece of work I had done in Node and be able to walk through the script. Originally, I was going to show some proprietary parts of the application, but I ended up never being able to get to that part of the technical interview, since we did not have enough time. I didn’t want to part ways after that without showing the team some of my work, so I explored what parts of my code I would be comfortable sending away for review.  It was funny grooming my project, looking at some of my custom built modules, that it had never occured to me to open source my modules that were not particularily proprietary.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;New mantra, “If it is not proprietary, open source it”.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Of course I had to do a bit of rewriting to do to make it ready for the 0.0.1 release, which was aimed only towards Windows.&lt;/p&gt;
+
+&lt;h2 id=&quot;getting-on-npm&quot;&gt;Getting on npm&lt;/h2&gt;
+&lt;p&gt;Up until this point, I only installed from NPM, not so much the latter. Turns out that is pretty easy too. If you are curious about this area, I would recommend checking out the new &lt;a href=&quot;https://www.npmjs.com/package/how-to-npm&quot;&gt;How to npm&lt;/a&gt; module to learn how to npm. Getting your module on npm is obviously nice so that users can properly install and package your module in their applications.&lt;/p&gt;
+
+&lt;p&gt;Now users can run, &lt;code&gt;npm install installfont --save&lt;/code&gt;, and quickly get up and running with my module.&lt;/p&gt;
+
+&lt;h2 id=&quot;cross-platform-compatibility&quot;&gt;Cross platform compatibility&lt;/h2&gt;
+&lt;p&gt;The reason I released it only for Windows at first, was because I felt It is actually pretty trivial to install font on OSX and Linux operating systems with Node. But there was still a lot of moving parts and wiring up that my module solved for that would be nice for other OS users. Ultimately assuming that other OS users would probably not want to use it and instead write their own solution for it is a terrible assumption. Even I was quick to look for a module instead of writing my own to keep my laziness intact.&lt;/p&gt;
+
+&lt;p&gt;No matter what OS you are on, this syntax just feels better.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;installfont&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;installfont&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt; 
+&lt;span class=&quot;lineno&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;installfont&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;path/to/your/font.ttf&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;4&lt;/span&gt; 	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;stack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;5&lt;/span&gt; 	&lt;span class=&quot;c1&quot;&gt;//handle callback tasks here&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;6&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;ends-and-benefits&quot;&gt;Ends and benefits&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.npmjs.com/package/installfont&quot;&gt;installfont&lt;/a&gt; is available on &lt;a href=&quot;https://www.npmjs.com/package/installfont&quot;&gt;npm&lt;/a&gt; as well as &lt;a href=&quot;https://github.com/matsilva/installfont&quot;&gt;Github&lt;/a&gt;. The most rewarding part is users are actually installing installfont as well as contributing to the repo. You would not get that if it was closed off deep in your application somewhere.&lt;/p&gt;
+
+</description>
+                <pubDate>Fri, 13 Feb 2015 13:13:09 -0800</pubDate>
+                <link>//npm/module/2015/02/13/creating-installfont/</link>
+                <guid isPermaLink="true">//npm/module/2015/02/13/creating-installfont/</guid>
+                
+                
+                    <category>npm</category>
+                
+                    <category>module</category>
+                
+            </item>
+        
+            <item>
+                <title>MySql crash launch repeat</title>
+                <description>&lt;h2 id=&quot;frugal-wordpress-setup&quot;&gt;Frugal Wordpress setup&lt;/h2&gt;
+&lt;p&gt;When you want to setup a wordpress server with decent performance at a low cost, nothing beats digital ocean. This is of course my opinion, but $5/month is hard to beat! The only caveat is 512mb of memory.
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;mb-is-like-raspberry-pi&quot;&gt;512mb is like Raspberry Pi&lt;/h2&gt;
+&lt;p&gt;To give some context, only having a 512mb droplet is like having a Rasberry Pi dedicated for your web server. Which there is nothing wrong with that if you do not expect heavy traffic or heavy processing.&lt;/p&gt;
+
+&lt;h2 id=&quot;mysql-will-die&quot;&gt;MySql will die…&lt;/h2&gt;
+&lt;p&gt;Eventually, MySql will simply quit. While it seems like the server can handle Wordpress no problem with great speed for such a small droplet, MySql running in parallel can’t seem to take it.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-consensus&quot;&gt;The consensus&lt;/h2&gt;
+&lt;p&gt;As you might have guessed, I had an issue with MySql crashing on my server. I read through some of the community questions on Digital Ocean. Mainly these two articles, &lt;a href=&quot;https://www.digitalocean.com/community/questions/mysql-keeps-crashing-on-512mb-droplet&quot;&gt;MySql keeps crashing on 512mb droplet&lt;/a&gt; and &lt;a href=&quot;https://www.digitalocean.com/community/questions/mysql-on-ubuntu-keeps-crashing&quot;&gt;MySql on Ubuntu keeps crashing&lt;/a&gt;. The general consensus is to either create a swap or upgrade to a bigger server. Although it seemed like users were having issues with both solutions. When hope was almost lost, I saw a comment where one guy was manually restarting MySql server every time it crashed. Then thought came acrossed my mind… couldn’t you just automate that?&lt;/p&gt;
+
+&lt;h2 id=&quot;automate-it&quot;&gt;Automate it&lt;/h2&gt;
+&lt;p&gt;Before you dish out more money to upgrade your perfectly good toy like server, let me help you automate this process of restarting the MySql server. So keep your money in your pockets. I admit this is probably not the most ideal of solutions, but it will work and keep your MySql server going. I also want to disclaim since this checks the status every minute, you could experience one minute of down time. So if you are okay with that, carry on!&lt;/p&gt;
+
+&lt;p&gt;Create a script file called &lt;code&gt;restart-mysql.sh&lt;/code&gt; and place it in root directory on your server. You could call it whatever you want and place it where every you’d like, just keep in mind of both for the next step.&lt;/p&gt;
+
+&lt;p&gt;Add this code to that file:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[[&lt;/span&gt; ! &lt;span class=&quot;s2&quot;&gt;&amp;quot;$(/usr/sbin/service mysql status)&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;~ &lt;span class=&quot;s2&quot;&gt;&amp;quot;start/running&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;then&lt;/span&gt;
+        /etc/init.d/mysql start
+&lt;span class=&quot;k&quot;&gt;fi&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;~&lt;a href=&quot;http://askubuntu.com/questions/451839/shell-script-issue-cron-job-script-to-restart-mysql-server-when-it-stops-accide&quot;&gt;solution source&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Make sure the script is executable by running this: &lt;code&gt;chmod +x /restart-mysql.sh&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Add this to the cron tab by doing the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;sudo crontab -e&lt;/code&gt; to edit the root contab file&lt;/li&gt;
+  &lt;li&gt;Then add this line to the file: &lt;code&gt;*/1 * * * * /restart-mysql.sh&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;results&quot;&gt;Results&lt;/h2&gt;
+&lt;p&gt;What this will do is poll the status of MySql every minute. If the status is “start/running”, it will start MySql again. This should be enough to keep your server going like the energizer bunny.&lt;/p&gt;
+
+</description>
+                <pubDate>Wed, 28 Jan 2015 13:13:09 -0800</pubDate>
+                <link>//sysadmin/2015/01/28/mysql-crash-launch-repeat/</link>
+                <guid isPermaLink="true">//sysadmin/2015/01/28/mysql-crash-launch-repeat/</guid>
+                
+                
+                    <category>sysadmin</category>
+                
+            </item>
+        
+            <item>
+                <title>Essential Git Habits</title>
+                <description>&lt;h2 id=&quot;sink-or-swim&quot;&gt;Sink or swim&lt;/h2&gt;
+&lt;p&gt;Sink or swim is usually the case when I join a team. Most recently I have been engaged with TwinTech developing full stack JavaScript for Under Armour. I have to say, the most initial friction was caused by my Git habits. Things like ugly Git history and weird commits sneaking into my branches. The good news is the team has been super helpful by helping me become more savvy with my Git habits. These habits are what I would like to share with you.
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;branching&quot;&gt;Branching&lt;/h2&gt;
+&lt;p&gt;Create relevant branch names. This can be as simple as the feature, defect or improvement ticket name. Version numbers can also be appended to these names to track version releases.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tracking upstream vs tracking origin.&lt;/strong&gt; This is crucial in order to make sure your branch is up to date with the latest upstream production branch. For those who do not know, upstream is the original repository you forked your working repository from.&lt;/p&gt;
+
+&lt;p&gt;If you have already created a local branch, run these commands:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;git remote add upstream giturl@gihub.git&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;git branch -u upstream/branch&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If not you can knock out two birds with one stone by running:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;git checkout -b your_branch upstream/branch&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Fetch upstream changes regularily and rebase instead of merging. If your branch becomes behind your upstream, rebase against the upstream branch to keep a linear tree and possibly help mitigate conflicts.&lt;/p&gt;
+
+&lt;h2 id=&quot;pairing&quot;&gt;Pairing&lt;/h2&gt;
+&lt;p&gt;Rebase against partner’s branch or vice versa. Pairing with another developer on a feature can quickly lead to nasty Git merges and history. A good idea can be for one developer to rebase against the other developer’s branch to keep things linear in the commit tree.&lt;/p&gt;
+
+&lt;h2 id=&quot;commit-message&quot;&gt;Commit message&lt;/h2&gt;
+&lt;p&gt;Create present tense commit messages. Don’t ask me why, just do it…. But if you must know I believe it is because it mimics the tense of Git actions like Git add and Git rm. If there is a relevant ticket, it helps to include it in the message. 
+Any additional details are best to include below the main brief message, starting on third line.
+A sample format can look like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Nav-877: Add store navigation to hamburger
+
+The actual store href was in the footer navigation database, so it was mapped to hamburger. Updates to footer will update hamburger.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;commit-and-push&quot;&gt;Commit and push&lt;/h2&gt;
+&lt;p&gt;Make many commits during development, push to remote development branch. This gives you nice history to revert and/or cherry pick during development. It also allows your team lead to communicate to the higher ups progress and work status, which is nice to prove you really have been working and not just lol’ing on Facebook… slacker.&lt;/p&gt;
+
+&lt;h2 id=&quot;production-bundling&quot;&gt;Production bundling&lt;/h2&gt;
+&lt;p&gt;Probably the most useful command I have learned is rebase -i. Essentially what this allows you to do is bundle up all your commits into a single commit for a clean pull request against production when the time comes.&lt;/p&gt;
+
+&lt;p&gt;To do this run:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;git rebase -i&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This will start an interactive rebase session, where you can squash and/or pick your commits. When the dialog appears, just change ‘pick’ to ‘squash’ and vice versa to choose which commits you want to appear in the history.&lt;/p&gt;
+</description>
+                <pubDate>Tue, 27 Jan 2015 13:13:09 -0800</pubDate>
+                <link>//git/2015/01/27/essential-git-habits/</link>
+                <guid isPermaLink="true">//git/2015/01/27/essential-git-habits/</guid>
+                
+                
+                    <category>git</category>
+                
+            </item>
+        
+    </channel>
+</rss>
