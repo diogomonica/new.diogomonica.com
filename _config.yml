@@ -15,3 +15,6 @@ paginate_path: "/archives/page/:num"
 
 # Build settings
 markdown: kramdown
+
+gems:
+  - jekyll-sitemap
