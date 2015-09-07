@@ -11,7 +11,7 @@ However, as I read through the dozens of articles on [how to choose a strong pas
 
 We should **not** be incentivizing people to choose passwords in the first place.
 
-<img src="{{urls.media}}/password-security-why-the-horse-battery-staple-is-not-correct/xkcd_comic.png" width="300"/>
+<img src="/images/password-security-why-the-horse-battery-staple-is-not-correct/xkcd_comic.png" width="300"/>
 
 There are obviously a few situations where memorable passwords are a requirement, but if you write an [article](http://www.vice.com/read/your-password-is-not-secure-and-its-not-your-fault-102 "Vice your password is not secure") about choosing passwords where password managers aren't mentioned even once, you're not helping anyone.
 
@@ -30,7 +30,7 @@ The fact is that the number of passwords you should memorize is pretty small, an
 
 With the advent of password managers, the large majority of all passwords should just be randomly generated, and replaced with a single password that provides access to all the others. This solves both the strength and memorability problems for 95% of your passwords<sup><a id="ffn1" href="#fn1" class="footnote">1</a></sup>.
 
-<img src="{{urls.media}}/password-security-why-the-horse-battery-staple-is-not-correct/password_pie.png" width="300"/>
+<img src="/images/password-security-why-the-horse-battery-staple-is-not-correct/password_pie.png" width="300"/>
 
 The obvious exceptions to this rule are: the password manager's own vault key, laptop passwords, phone unlock codes, etc. Note, however, that this number of passwords is mostly static; it does not increase when you sign up for a new service.
 
@@ -44,7 +44,7 @@ Bruteforcing passwords these days is hard. As a community we did a great job inc
 
 Unless your attacker model includes state actors, you really don’t have to be concerned about pure brute-force attacks. The most efficient attack against scrypt involves the compromise of your password hash and a lot of money spent on dedicated hardware to crack it offline, something the large majority of attackers does not have access to.
 
-<img src="{{urls.media}}/password-security-why-the-horse-battery-staple-is-not-correct/nsa_eagle.jpg" width="200"/>
+<img src="/images/password-security-why-the-horse-battery-staple-is-not-correct/nsa_eagle.jpg" width="200"/>
 
 Without stealing the password hash, attackers are limited to trying username/password combinations over the internet, reducing the upper-bound of number of attempts per second by at least 3 orders of magnitude.
 
@@ -61,13 +61,13 @@ This leads to the repeated use of what are, in fact, very weak passwords, highly
 When coupled with the predominance of dictionary based attacks and leaks of large password data sets, this situation has led, in later years, to the idea that the single most useful criterion on which to classify the strength of a candidate password, is the frequency with which it has appeared in the past.
 
 <div class="image_cont">
-<img src="{{urls.media}}/password-security-why-the-horse-battery-staple-is-not-correct/distribution1.png" width="300" style="display:inline" />
-<img src="{{urls.media}}/password-security-why-the-horse-battery-staple-is-not-correct/distribution2.png" width="300" style="display:inline"/>
+<img src="/images/password-security-why-the-horse-battery-staple-is-not-correct/distribution1.png" width="300" style="display:inline" />
+<img src="/images/password-security-why-the-horse-battery-staple-is-not-correct/distribution2.png" width="300" style="display:inline"/>
 </div>
 
 This means that instead of a password strength meter you should be ensuring that there is no skew in the distribution of passwords. If each password is guaranteed to be unique, the advantage of a statistical guessing attack is greatly reduced.
 
-There are [several](https://www.usenix.org/conference/hotsec10/popularity-everything-new-approach-protecting-passwords-statistical-guessing) [works](http://www.internetsociety.org/adaptive-password-strength-meters-markov-models) in the literature that propose such schemes, including one of [my own]({{urls.media}}/password-security-why-the-horse-battery-staple-is-not-correct/local_password_validation_with_soms_diogo_monica.pdf) (PDF).
+There are [several](https://www.usenix.org/conference/hotsec10/popularity-everything-new-approach-protecting-passwords-statistical-guessing) [works](http://www.internetsociety.org/adaptive-password-strength-meters-markov-models) in the literature that propose such schemes, including one of [my own](/images/password-security-why-the-horse-battery-staple-is-not-correct/local_password_validation_with_soms_diogo_monica.pdf) (PDF).
 
 <div style="text-align: center;">
 <iframe src="//www.slideshare.net/slideshow/embed_code/38823827" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
