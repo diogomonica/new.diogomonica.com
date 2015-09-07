@@ -71,18 +71,20 @@
 /* Layers */
 
 	#titleBar {
-		background: #222;
-		color: #fff;
+		background: $diogoBlue;
+		color: $white;
 		min-width: 320px;
 
 		.title {
-			color: #fff;
 			display: block;
-			font-weight: $font-weight-bold;
-			height: 44px;
-			line-height: 44px;
-			padding: 0 1em;
 			width: 100%;
+			height: 44px;
+			padding: 0 1em;
+			color: $white;
+			font-weight: $font-weight-bold;
+			line-height: 44px;
+			letter-spacing: 1px;
+			text-transform: uppercase;
 
 			@if $side-header == 'right' {
 				text-align: left;
@@ -107,8 +109,8 @@
 			}
 
 			&:before {
-				background: $color-accent-bg;
-				color: $color-accent-fg-bold;
+				background: $diogoBlue;
+				color: $white;
 				content: '\f0c9';
 				display: block;
 				font-size: 18px;
@@ -130,6 +132,6 @@
 	}
 
 	#sidePanel {
-		background: $color-header-bg;
-		color: $color-header-fg;
+		background: $diogoBlue;
+		color: $white;
 	}
