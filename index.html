@@ -2,7 +2,11 @@
 layout: default
 ---
 
-<section id="one" >
+<div>
+    <div id="background-image"></div>
+</div>
+
+<section>
     <div class="container">
         {% for post in site.posts limit:1 %}
             <article>
@@ -21,6 +25,7 @@ layout: default
         {% endfor %}
     </div>
 </section>
+
 <section>
     <div class="container">
         <div class="features">
@@ -30,7 +35,7 @@ layout: default
                 <header>
                     <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
                 </header>
-                
+
                     {{ post.content | truncatewords: 30 }}
                 </section>
                 <footer>
