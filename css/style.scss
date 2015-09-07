@@ -1036,10 +1036,48 @@ $size-header: 23em;
 		}
 	}
 
+/* Info Blurb */
+
+	.pagination {
+		position: relative;
+		text-align: center;
+		.page-number {
+			font-size: 13px;
+			font-style: oblique;
+		}
+		.back,
+		.next {
+			position: absolute;
+			font-size: 14px;
+			letter-spacing: 2px;
+    		text-transform: uppercase;
+		}
+		span.back,
+		span.next {
+			opacity: 0.3;
+		}
+		.back {
+			left: 0;
+			&:before {
+				margin-right: 5px;
+			}
+		}
+		.next {
+			right: 0;
+			border-bottom: 0;
+			&:before {
+				float: right;
+				margin-left: 5px;
+			}
+		}
+	}
+
 /* Footer */
 
 	#footer {
+		width: 100%;
 		padding: 20px;
+		margin-top: 20px;
 		background: #f0f0f0;
 		color: #c0c0c0;
 		overflow: hidden;
