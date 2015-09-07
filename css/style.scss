@@ -815,7 +815,7 @@ $size-header: 23em;
 
 	.features {
 		article {
-			border-top: solid ($size-border-width * 1.5) $color-border;
+			border-top: solid 3px $grey;
 			margin-bottom: $size-element-margin;
 			padding-top: $size-element-margin;
 
@@ -1030,14 +1030,8 @@ $size-header: 23em;
 
 	#main {
 		> section {
-			border-top: solid ($size-border-width * 3) $color-border;
-
 			> .container {
 				padding: 6em 0 4em 0;
-			}
-
-			&:first-child {
-				border-top: 0;
 			}
 		}
 	}
