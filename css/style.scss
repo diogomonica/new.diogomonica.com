@@ -1058,6 +1058,9 @@ $size-header: 23em;
 				a {
 					border-bottom: 0;
 					color: $diogoLightBlue;
+					&:before {
+						margin-right: 5px;
+					}
 				}
 			}
 		}

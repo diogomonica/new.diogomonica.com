@@ -1,8 +1,6 @@
 - Increase size of hamburger
 - Header only appears appears after scroll
 - Clean layered colors (shitty blue that appears on reload)
-- Actually add picture and tagline to header
-- Remove picture and tagline from menu (maybe)
 - Add sexypicture small to left of menu
 - Add padding between navigation on individual post and footer
 - Change individual post header menu
