@@ -40,6 +40,10 @@
 					width: 100%;
 					margin: 0 !important;
 					background: $diogoLightBlue;
+					&:active,
+					&:hover {
+						background: $diogoBlue;
+					}
 
 					&.icon {
 						&:before {
