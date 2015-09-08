@@ -22,7 +22,7 @@ About a year and a half ago I fell in love with [State Bird Provisions](http://s
 
 One day I sat down, sshed into my remote server and wrote the following chron job (of which I am not proud):
 
-<pre>
+{% highlight ruby linenos %}
 #! /bin/bash
 url="http://rez.urbanspoon.com/b/widget/2086?background=ebf3fd&
 border=bbd4f1&header=000&link=0144a7&locale=en&source=selfhost&text=000"
@@ -31,7 +31,7 @@ hash=`cat /tmp/state_bird`
 newhash=`cat /tmp/state_bird`
 if [[ "$hash" != "$newhash" ]]; then echo "Reservations page just changed: 
 http://statebirdsf.com/reservations/ - $newhash" | mail -s Reservations EMAIL; fi
-</pre>
+{% endhighlight %}
 
 If you ignore the part where this code is utterly crappy, you can see that it actually sends out an email every-time the reservation page changes. I set it to run once a minute, and I let it run.
 
