@@ -71,13 +71,13 @@
 /* Layers */
 
 	#titleBar {
+		$avatarSize: 30px;
+		$paddingSize: 16px;
 		background: $diogoBlue;
 		color: $white;
 		min-width: 320px;
 
 		.title {
-			$avatarSize: 30px;
-			$paddingSize: 16px;
 			display: block;
 			width: 100%;
 			height: 44px;
@@ -87,19 +87,6 @@
 			line-height: 44px;
 			letter-spacing: 1px;
 			text-transform: uppercase;
-			&:before {
-				content: '';
-				position: absolute;
-				top: 50%;
-				left: $paddingSize;
-				width: $avatarSize;
-				height: $avatarSize;
-				margin-top: $avatarSize / -2;
-				background-image: url('../images/sexyface_small.png');
-				background-position: center center;
-    			background-repeat: no-repeat;
-    			background-size: cover;
-			}
 
 			@if $side-header == 'right' {
 				text-align: left;
@@ -107,6 +94,21 @@
 			@else {
 				text-align: right;
 			}
+		}
+
+		.avatar {
+			position: absolute;
+			top: 50%;
+			left: $paddingSize;
+			width: $avatarSize;
+			height: $avatarSize;
+			margin-top: $avatarSize / -2;
+			border-bottom: 0;
+			background-image: url('../images/sexyface_small.png');
+			background-position: center center;
+    		background-repeat: no-repeat;
+    		background-size: cover;
+    		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 		}
 
 		.toggle {
