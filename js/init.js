@@ -45,3 +45,26 @@
 	});
 
 })(jQuery);
+
+$(document).ready(function() {
+	// hide/show fixed mobile header
+	var $header = $('#titleBar');
+	var $infoHeader = $('#info-header');
+
+    var checkScrollPosition = function() {
+        var windowTop = $(window).scrollTop();
+        var isPastTop = windowTop > $infoHeader.outerHeight();
+        var isStuck = $header.hasClass('stuck');
+
+        if( isPastTop && !isStuck ) {
+            $header.addClass('stuck');
+        } else if( !isPastTop && isStuck ) {
+            $header.removeClass('stuck');
+        }
+    };
+
+    if( $header.length ) {
+    	$(window).on('scroll', _.throttle(checkScrollPosition, 16));
+    	checkScrollPosition();
+    }
+});

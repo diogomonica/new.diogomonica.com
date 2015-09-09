@@ -31,10 +31,6 @@
 
 /* Header */
 
-	#skel-layers-wrapper {
-		padding-top: 44px;
-	}
-
 	#header {
 		background: none;
 		bottom: auto;
@@ -73,9 +69,13 @@
 	#titleBar {
 		$avatarSize: 30px;
 		$paddingSize: 16px;
+		display: none !important;
 		background: $diogoBlue;
 		color: $white;
 		min-width: 320px;
+		&.stuck {
+			display: block !important;
+		}
 
 		.title {
 			display: block;
