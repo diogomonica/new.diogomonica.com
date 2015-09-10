@@ -6,7 +6,7 @@ description: "Diogo really likes pretty code"
 
 I love writting pretty code. That is why I have this test page with a bunch of pretty code in various languages.
 
-{% highlight bash linenos %}
+```bash
 # docker run -t registry:5000/dolly
 # export DOCKER_CONTENT_TRUST=1
 # docker run -t registry:5000/dolly
@@ -19,8 +19,7 @@ I love writting pretty code. That is why I have this test page with a bunch of p
 (go to registry)
 # clean
 # docker run -t registry:5000/dolly
-
-{% endhighlight %}
+```
 
 Another piece of code that would be cool would be some golang code in the house:
 
@@ -110,7 +109,7 @@ sub msg_private {
 
 Oops, that was totally perl. Now for reals:
 
-{% highlight ruby %}
+```ruby
 #! /bin/env ruby
 require 'socket'
 
@@ -125,6 +124,4 @@ unless File.exist? input_filename
   puts "# Usage: #{$0} FILNAME.csv"
   exit(-1)  
 end
-
-
-{% endhighlight %}
+```
