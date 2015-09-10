@@ -4,6 +4,7 @@
 @import 'vars';
 @import 'mixins';
 @import 'font-awesome.min.css';
+@import 'syntax.css';
 @import url('http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400');
 
 /*
@@ -125,9 +126,7 @@ $size-header: 23em;
 	}
 
 	code {
-		background: #555;
 		border-radius: $size-border-radius;
-		color: #fff;
 		font-family: $font-family-fixed;
 		font-size: 0.9em;
 		margin: 0 0.25em;
@@ -140,11 +139,19 @@ $size-header: 23em;
 		margin: 0 0 $size-element-margin 0;
 
 		code {
-			-webkit-overflow-scrolling: touch;
 			display: block;
-			line-height: 1.5em;
+			white-space: pre; 
 			overflow-x: auto;
+			word-wrap: normal;
+			line-height: 1.5em;
 			padding: 1em 1.5em;
+		}
+
+		.lineno { 
+			color: #ccc; 
+			display:inline-block; 
+			padding: 0 5px; 
+			border-right:1px solid #ccc; 
 		}
 	}
 
