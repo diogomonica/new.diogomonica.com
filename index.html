@@ -27,9 +27,9 @@ group: "navigation"
         <!-- Pagination links -->
         <div class="pagination">
           {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path }}" class="back icon fa-chevron-left">Back</a>
+            <a href="{{ paginator.previous_page_path }}" class="prev icon fa-chevron-left">Prev</a>
           {% else %}
-            <span class="back icon fa-chevron-left">Back</span>
+            <span class="prev icon fa-chevron-left">Prev</span>
           {% endif %}
 
           <span class="page-number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>

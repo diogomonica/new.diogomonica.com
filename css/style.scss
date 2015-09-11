@@ -1061,18 +1061,18 @@ $size-header: 23em;
 			font-size: 13px;
 			font-style: oblique;
 		}
-		.back,
+		.prev,
 		.next {
 			position: absolute;
 			font-size: 14px;
 			letter-spacing: 2px;
     		text-transform: uppercase;
 		}
-		span.back,
+		span.prev,
 		span.next {
 			opacity: 0.3;
 		}
-		.back {
+		.prev {
 			left: 0;
 			&:before {
 				margin-right: 5px;
