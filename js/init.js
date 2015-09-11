@@ -67,4 +67,7 @@ $(document).ready(function() {
     	$(window).on('scroll', _.throttle(checkScrollPosition, 16));
     	checkScrollPosition();
     }
+
+    // add console header
+    $('.highlight code').before('<span class="console-header"><span></span></span>');
 });

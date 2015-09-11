@@ -126,8 +126,8 @@ $size-header: 23em;
 	}
 
 	code {
-		padding: 0.25em 0.65em;
-		margin: 0 0.25em;
+		padding: 20px;
+		margin: 0;
 		border-radius: $size-border-radius;
 		font-family: $font-family-fixed;
 		font-size: 0.9em;
@@ -136,25 +136,60 @@ $size-header: 23em;
 	}
 
 	pre {
+		position: relative;
+		padding-top: 30px;
+		margin: 0 0 $size-element-margin 0;
 		font-family: $font-family-fixed;
 		font-size: 0.9em;
-		margin: 0 0 $size-element-margin 0;
 
 		code {
 			-webkit-overflow-scrolling: touch;
 			display: block;
-			white-space: pre;
 			overflow-x: auto;
+			white-space: pre;
 			word-wrap: normal;
 			line-height: 1.5em;
-			padding: 1em 1.5em;
+			border-radius: 0 0 $size-border-radius $size-border-radius;
+		}
+
+		.console-header {
+			position: absolute;
+    		top: 0;
+    		left: 0;
+    		width: 100%;
+    		height: 30px;
+    		background: #bbb;
+    		border-radius: $size-border-radius $size-border-radius 0 0;
+    		box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    		span {
+    			&,
+    			&:before,
+    			&:after {
+    				position: absolute;
+	    			top: 10px;
+	    			left: 10px;
+	    			width: 10px;
+	    			height: 10px;
+	    			background: #777;
+	    			border-radius: 50%;
+    			}
+    			&:before {
+    				content: '';
+    				top: 0;
+    				left: 15px;
+    			}
+    			&:after {
+    				content: '';
+    				top: 0;
+    				left: 30px;
+    			}
+    		}
 		}
 
 		.lineno {
-			color: #ccc;
-			display:inline-block;
+			display: inline-block;
 			padding: 0 5px;
-			border-right:1px solid #ccc;
+			color: #ccc;
 		}
 	}
 
