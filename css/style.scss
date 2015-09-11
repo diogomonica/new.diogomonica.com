@@ -877,8 +877,8 @@ $size-header: 23em;
 /* Header */
 
 	#header {
-		background: $color-header-bg;
-		color: $color-header-fg;
+		background: $diogoBlue;
+		color: $white;
 		height: 100%;
 		position: fixed;
 		text-align: center;
@@ -988,6 +988,7 @@ $size-header: 23em;
 
 /* Info Blurb */
 	#info-header {
+		display: none;
 		position: relative;
 		width: 100%;
 		height: 200px;
@@ -1050,7 +1051,7 @@ $size-header: 23em;
 		}
 	}
 
-/* Info Blurb */
+/* Pagination */
 
 	.pagination {
 		position: relative;
