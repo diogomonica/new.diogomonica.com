@@ -991,30 +991,39 @@ $size-header: 23em;
 		> nav {
 			ul {
 				list-style: none;
-				margin: 0;
 				padding: 0;
+				margin: 0;
 
 				li {
-					border-top: 1px solid $white;
 					display: block;
 					padding: 0;
+					margin: 0 40px;
 
 					a {
-						@include vendor-property('transition', 'none');
-						border: 0;
-						color: $white;
 						display: block;
-						padding: 0.85em 0;
+						padding: 15px 0;
+						border-top: 1px solid rgba(255,255,255,0.2);
+						border-bottom: 0;
+						color: $white;
 						text-decoration: none;
+						@include vendor-property('transition', 'none');
+					}
 
-						&.active {
-							background: $white;
-							color: $diogoBlue;
+					&.active {
+						a {
+							margin: 0px -40px;
+							background: rgba(255,255,255,0.2);
+						}
+						&,
+						& + li {
+							a {
+								border-top: 0;
+							}
 						}
 					}
 
-					&:last-child {
-						border-bottom: 1px solid $white;
+					&:last-child:not(.active) {
+						border-bottom: 1px solid rgba(255,255,255,0.2);
 					}
 				}
 			}

@@ -8,9 +8,9 @@
         </header>
         <nav id="nav">
             <ul>
-                <li><a {% if page.title == "Home" %}class="active"{% endif %} href="/">Home</a></li>
-                <li><a {% if page.title == "About Me" %}class="active"{% endif %} href="/about">About Me</a></li>
-                <li><a {% if page.title == "Speaker Kit" %}class="active"{% endif %} href="/speakerkit">Speaker Kit</a></li>
+                <li{% if page.title == "Home" %} class="active"{% endif %}><a href="/">Home</a></li>
+                <li{% if page.title == "About Me" %} class="active"{% endif %}><a href="/about">About Me</a></li>
+                <li{% if page.title == "Speaker Kit" %} class="active"{% endif %}><a href="/speakerkit">Speaker Kit</a></li>
             </ul>
         </nav>
         <footer>
