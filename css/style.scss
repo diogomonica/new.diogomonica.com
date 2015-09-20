@@ -942,10 +942,10 @@ $size-header: 23em;
 		}
 
 		a {
-			color: $color-header-fg;
+			color: $white;
 
 			&:hover {
-				color: $color-header-fg-bold !important;
+				color: $white;
 			}
 		}
 
@@ -978,12 +978,6 @@ $size-header: 23em;
 
 			.icons {
 				margin: 0;
-
-				li {
-					a {
-						color: $white;
-					}
-				}
 			}
 		}
 
@@ -1003,7 +997,6 @@ $size-header: 23em;
 						padding: 15px 0;
 						border-top: 1px solid rgba(255,255,255,0.2);
 						border-bottom: 0;
-						color: $white;
 						text-decoration: none;
 						@include vendor-property('transition', 'none');
 					}
