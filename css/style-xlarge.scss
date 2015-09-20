@@ -28,7 +28,7 @@ $size-header: 21em;
 		}
 
 		> footer {
-			padding: 1.5em;
+			padding: 20px;
 		}
 	}
 
@@ -51,4 +51,10 @@ $size-header: 21em;
 				padding: 4em 0 2em 0;
 			}
 		}
+	}
+
+/* Footer */
+
+	#footer {
+		display: none;
 	}

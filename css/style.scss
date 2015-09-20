@@ -589,22 +589,21 @@ $size-header: 23em;
 		}
 
 		&.icons {
-			cursor: default;
-			list-style: none;
 			padding-left: 0;
+			list-style: none;
+			cursor: default;
 
 			li {
 				display: inline-block;
-				padding: 0 1em 0 0;
+				padding: 0;
+    			margin-right: 25px;
 
 				&:last-child {
-					padding-right: 0 !important;
+					margin-right: 0;
 				}
 
 				.icon {
-					&:before {
-						font-size: 1.25em;
-					}
+					font-size: 20px;
 				}
 			}
 		}
@@ -955,8 +954,8 @@ $size-header: 23em;
 
 			.avatar {
 				display: block;
-				margin: 0 auto $size-element-margin auto;
-				width: 8em;
+				width: 100px;
+				margin: 0 auto 30px;
 			}
 
 			h1 {
@@ -965,18 +964,17 @@ $size-header: 23em;
 			}
 
 			p {
-				color: $white;
+				margin: 20px 0 0 0;
 				font-style: italic;
-				margin: 1em 0 0 0;
 			}
 		}
 
 		> footer {
+			position: absolute;
 			bottom: 0;
 			left: 0;
-			padding: 2em;
-			position: absolute;
 			width: 100%;
+			padding: 2em;
 
 			.icons {
 				margin: 0;
