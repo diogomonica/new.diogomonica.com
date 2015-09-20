@@ -609,9 +609,11 @@ $size-header: 23em;
 		}
 
 		&.actions {
-			cursor: default;
 			list-style: none;
 			padding-left: 0;
+			margin-bottom: 0;
+			text-align: right;
+			cursor: default;
 
 			li {
 				display: inline-block;
@@ -770,23 +772,25 @@ $size-header: 23em;
 	.button {
 		@include vendor-property('appearance', 'none');
 		@include vendor-property('transition', 'background-color #{$duration-transition} ease-in-out, color #{$duration-transition} ease-in-out');
-		background-color: $color-accent2-bg;
-		border-radius: $size-border-radius;
-		border: 0;
-		color: $color-accent2-fg-bold !important;
-		cursor: pointer;
+
 		display: inline-block;
-		font-weight: $font-weight-bold;
+		width: 200px;
 		height: $size-element-height;
-		line-height: $size-element-height;
 		padding: 0 1.5em;
+		border: 0;
+		border-radius: $size-border-radius;
+		background-color: $diogoLightBlue;
+		color: $white;
+		font-weight: $font-weight-bold;
+		line-height: $size-element-height;
 		text-align: center;
 		text-decoration: none;
 		white-space: nowrap;
+		cursor: pointer;
 
 		&:hover {
-			background-color: lighten($color-accent2-bg, 5);
-			color: $color-accent2-fg-bold !important;
+			background-color: darken($diogoLightBlue, 10);
+			color: $white;
 		}
 
 		&:active {
@@ -798,6 +802,24 @@ $size-header: 23em;
 
 			&:before {
 				margin-right: 0.5em;
+			}
+		}
+
+		&.read-more {
+			padding: 0 40px;
+
+			&:before {
+				position: absolute;
+				right: 40px;
+				margin-right: 0;
+				opacity: 0;
+				@include vendor-property('transition', 'opacity #{$duration-transition} ease-in-out');
+			}
+
+			&:hover {
+				&:before {
+					opacity: 1;
+				}
 			}
 		}
 
@@ -863,14 +885,9 @@ $size-header: 23em;
 
 	.features {
 		article {
-			border-top: solid 3px $grey;
-			margin-bottom: $size-element-margin;
-			padding-top: $size-element-margin;
-
-			&:first-child {
-				border-top: 0;
-				padding-top: 0;
-			}
+			padding-bottom: 40px;
+			border-bottom: 3px solid $grey;
+			margin-bottom: 40px;
 
 			.image {
 				display: inline-block;
@@ -904,7 +921,7 @@ $size-header: 23em;
 	        border-radius: 5px;
 	    }
 	    p {
-	        margin-bottom: 1.1em;
+	        margin-bottom: 20px;
 	    }
 	}
 
