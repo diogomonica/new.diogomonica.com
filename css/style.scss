@@ -919,6 +919,7 @@ $size-header: 23em;
 		text-align: center;
 		top: 0;
 		width: $size-header;
+		box-shadow: 0 0 5px rgba(0,0,0,1);
 
 		@if $side-header == 'right' {
 			right: 0;
