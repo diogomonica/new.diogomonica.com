@@ -149,7 +149,11 @@ $size-header: 23em;
 			white-space: pre;
 			word-wrap: normal;
 			line-height: 1.5em;
-			border-radius: 0 0 $size-border-radius $size-border-radius;
+			border-radius: $size-border-radius;
+			&.console {
+				   border-top-left-radius: 0;
+					border-top-right-radius: 0;
+			}
 		}
 
 		.console-header {
@@ -188,7 +192,7 @@ $size-header: 23em;
 
 		.lineno {
 			display: inline-block;
-			padding: 0 5px;
+			padding: 0 10px 0 0;
 			color: #ccc;
 		}
 	}
@@ -788,13 +792,10 @@ $size-header: 23em;
 		white-space: nowrap;
 		cursor: pointer;
 
+		&:active,
 		&:hover {
 			background-color: darken($diogoLightBlue, 10);
 			color: $white;
-		}
-
-		&:active {
-			background-color: darken($color-accent2-bg, 5);
 		}
 
 		&.icon {
@@ -811,7 +812,7 @@ $size-header: 23em;
 			&:before {
 				position: absolute;
 				right: 40px;
-				margin-right: 0;
+				margin-right: -5px;
 				opacity: 0;
 				@include vendor-property('transition', 'opacity #{$duration-transition} ease-in-out');
 			}
@@ -1060,7 +1061,7 @@ $size-header: 23em;
 			width: 100%;
 			height: 100%;
 			background: $black;
-			opacity: 0.2;
+			opacity: 0.6;
 		}
 		.bg-content {
 			position: absolute;
@@ -1118,13 +1119,21 @@ $size-header: 23em;
 		.prev,
 		.next {
 			position: absolute;
+			color: $diogoBlueGreen;
 			font-size: 14px;
 			letter-spacing: 2px;
     		text-transform: uppercase;
 		}
+		a.prev,
+		a.next {
+    		&:active,
+    		&:hover {
+    			color: darken($diogoBlueGreen, 20);
+    		}
+		}
 		span.prev,
 		span.next {
-			opacity: 0.3;
+			opacity: 0.5;
 		}
 		.prev {
 			left: 0;

@@ -14,10 +14,15 @@ layout: default
 
         <div class="pagination">
             {% if page.previous %}
-                <a href="{{ page.previous.url }}" class="prev icon fa-chevron-left">Prev</a>
+                <a href="{{ page.previous.url }}" class="prev icon fa-chevron-left">Prev Post</a>
+            {% else %}
+                <span class="prev icon fa-chevron-left">Prev Post</span>
             {% endif %}
+
             {% if page.next %}
-                <a href="{{ page.next.url }}" class="next icon fa-chevron-right">Next</a>
+                <a href="{{ page.next.url }}" class="next icon fa-chevron-right">Next Post</a>
+            {% else %}
+                <span class="next icon fa-chevron-right">Next Post</span>
             {% endif %}
         </div>
     </div>

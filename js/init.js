@@ -69,5 +69,5 @@ $(document).ready(function() {
     }
 
     // add console header
-    $('.highlight code').before('<span class="console-header"><span></span></span>');
+    $('.highlight code:not([data-lang])').addClass('console').before('<span class="console-header"><span></span></span>');
 });
