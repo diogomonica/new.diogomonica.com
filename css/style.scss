@@ -22,11 +22,11 @@ $size-header: 23em;
 	}
 
 	body, input, select, textarea {
-		color: $color-fg;
+		color: $black;
 		font-family: $font-family;
-		font-size: 16pt;
+		font-size: 18px;
 		font-weight: $font-weight;
-		line-height: 1.75em;
+		line-height: 28px;
 	}
 
 	a {
@@ -46,7 +46,6 @@ $size-header: 23em;
 	}
 
 	strong, b {
-		color: $color-fg-bold;
 		font-weight: $font-weight-bold;
 	}
 
@@ -59,7 +58,7 @@ $size-header: 23em;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: $color-fg-bold;
+		color: $black;
 		font-weight: $font-weight-bold;
 		line-height: 1em;
 		margin: 0 0 ($size-element-margin * 0.25) 0;
@@ -72,8 +71,8 @@ $size-header: 23em;
 	}
 
 	h2 {
-		font-size: 2em;
-		line-height: 1.5em;
+		font-size: 48px;
+		line-height: 60px;
 	}
 
 	h3 {
@@ -132,7 +131,7 @@ $size-header: 23em;
 		font-family: $font-family-fixed;
 		font-size: 0.9em;
 		background-color: $black;
-    	box-shadow: 0 0 10px rgba(0,0,0,1);
+    	box-shadow: 0 0 10px rgba(0,0,0,0.8);
 	}
 
 	pre {
@@ -164,7 +163,7 @@ $size-header: 23em;
     		height: 30px;
     		background: #bbb;
     		border-radius: $size-border-radius $size-border-radius 0 0;
-    		box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    		box-shadow: 0 0 10px rgba(0,0,0,0.4);
     		span {
     			&,
     			&:before,
@@ -246,12 +245,9 @@ $size-header: 23em;
 
 		&.major {
 			h2 {
-				color: $diogoLightBlue;
-				font-size: 3.5em;
-
 				& + p {
-					color: $color-fg-bold;
-					font-size: 1.75em;
+					color: $darkGrey;
+					font-size: 15px;
 					font-weight: $font-weight-bold;
 					margin-top: -0.75em;
 				}
@@ -936,7 +932,7 @@ $size-header: 23em;
 		text-align: center;
 		top: 0;
 		width: $size-header;
-		box-shadow: 0 0 5px rgba(0,0,0,1);
+		box-shadow: 0 0 5px rgba(0,0,0,0.8);
 
 		@if $side-header == 'right' {
 			right: 0;
