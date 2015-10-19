@@ -1,0 +1,26 @@
+---
+title: Media Timeline
+layout: default
+group: "navigation"
+---
+{% yaml_to_liquid %}
+
+<section id="one">
+    <div class="container">
+        <h3>Media Timeline</h3>
+
+        <div class="timeline-container">
+
+            {% for n in page.yml.entries %}
+                <div class="timeline-point">
+                    <div class="timeline-point-info">
+                        <h4>{{ n.title }}</h4>
+                        <p>{{ n.description }}</p>
+                        <button class="button">{{ n.action }}</button>
+                    </div>
+                    <span class="date">{{ n.date }}</span>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
