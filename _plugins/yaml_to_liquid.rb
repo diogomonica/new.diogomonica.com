@@ -6,7 +6,7 @@ module Jekyll
     end
 
     def render(context)
-      yml = YAML::load(File.read('/Users/diogo/Development/new.diogomonica.com/timeline/_timeline.yml'))
+      yml = YAML::load(File.read('timeline/_timeline.yml'))
       context.registers[:page]['yml'] = yml
       nil
     end
