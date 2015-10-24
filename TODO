@@ -1,2 +1,6 @@
-- Come up with a less boring footer (blue?)
 - Add sliding animation to header show/hide
+- Change the font to roboto
+- FIx header footer bug
+- Make timeline responsive
+- Make pictures have max size in posts
+- Make bio picture go back to home (Desktop)
