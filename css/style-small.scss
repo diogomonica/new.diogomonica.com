@@ -34,6 +34,10 @@
 		font-size: 1em;
 	}
 
+	.align-center {
+		text-align: left;
+	}
+
 /* Image */
 
 	.image {
@@ -157,5 +161,61 @@
 				font-size: 20px;
 				width: 44px;
 			}
+		}
+	}
+
+/* Timeline */
+
+	.timeline-container {
+		padding: 0 60px;
+	    margin-top: 0;
+
+	    &:before {
+	    	left: 20px;
+	    }
+	}
+
+	.timeline-point {
+		width: 100%;
+		padding: 0;
+		margin-bottom: 30px;
+
+		.date {
+			top: -30px;
+    		left: 15px;
+		}
+
+		.point {
+			left: -60px;
+			margin-left: 0;
+		}
+
+		&:nth-child(2n) {
+			.timeline-point-info {
+				float: none;
+    			right: auto;
+			}
+
+			.date {
+				right: auto;
+			}
+
+			.point {
+				left: -60px;
+			}
+    	}
+
+		&:nth-child(2) {
+    		margin-top: 30px;
+    	}
+	}
+
+	.timeline-point-info {
+		&:before {
+			left: -9px;
+		}
+
+		&:after {
+			left: 0;
 		}
 	}

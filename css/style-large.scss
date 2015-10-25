@@ -41,3 +41,28 @@ $size-header: 20em;
 	#footer {
 		display: none;
 	}
+
+/* Timeline */
+
+	.timeline-point {
+		padding: 0 40px;
+
+		.point {
+			right: 0;
+    		margin-right: -20px;
+		}
+
+		&:nth-child(2n) {
+			.timeline-point-info {
+    			right: 0;
+    		}
+
+			.point {
+				left: 0;
+			}
+    	}
+	}
+
+	.timeline-point-info {
+		left: 0;
+	}
