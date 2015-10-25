@@ -7,15 +7,21 @@ entries:
 
     - title: "From 0 to 0xdeadbeef - security mistakes that will haunt your startup"
       image: deadbeef.png
-      date: "Jun 2015"
+      date: "Jul 2015"
       type: video
       url: https://www.youtube.com/watch?v=aCGR4YnFC3U
 
     - title: "Securing Your Applications using Docker"
       image: securingyourapplicationusingdocker.png
-      date: "Jun 2015"
+      date: "Jul 2015"
       type: video
       url: https://www.youtube.com/watch?v=KmxOXmPhZbk
+
+    - title: "Forbes: Apple's HomeKit security too demanding"
+      image: homekit.png
+      date: "Jul 2015"
+      type: article
+      url: http://www.forbes.com/sites/aarontilley/2015/07/21/whats-the-hold-up-for-apples-homekit/
 
     - title: "An IDS for Browser Hijacking"
       image: browserids.png
