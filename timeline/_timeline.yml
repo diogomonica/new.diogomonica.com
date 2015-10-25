@@ -35,6 +35,18 @@ entries:
       type: video
       url: https://www.youtube.com/watch?v=8mUm0x1uy7c
 
+    - title: "NY Times: Keeping Your Car Safe From Electronic Thieves"
+      image: nytimescars.jpg
+      date: "Apr 2015"
+      type: article
+      url: http://www.nytimes.com/2015/04/16/style/keeping-your-car-safe-from-electronic-thieves.html
+
+    - title: "The Register UK: Docker hires'n'acquires to cure its security headaches"
+      image: hiresnacquires.jpg
+      date: "Mar 2015"
+      type: article
+      url: http://www.theregister.co.uk/2015/03/04/docker_hiring_and_acquiring/
+
     - title: "Local password validation using Self-Organizing Maps"
       image: soms.png
       date: "Aug 2014"
@@ -64,6 +76,12 @@ entries:
       date: "Jul 2013"
       type: video
       url: https://www.youtube.com/watch?v=6iM2jbheJ-0
+
+    - title: "ArsTecnica: Engineer can’t get decent dinner reservations"
+      image: arstecnicabots.jpg
+      date: "Jul 2013"
+      type: article
+      url: http://arstechnica.com/business/2013/07/engineer-cant-get-decent-dinner-reservations-creates-urbanspoon-dominating-bot/
 
     - title: "Bletchley: Dealing with HSMs so you don't have to"
       image: bletchley.png
