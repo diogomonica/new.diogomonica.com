@@ -2,83 +2,83 @@ entries:
     - title: "A Docker image walks into a Notary"
       image: notary.png
       date: "Sep 2015"
-      action: Watch
+      type: video
       url: https://www.youtube.com/watch?v=JvjdfQC8jxM
 
     - title: "From 0 to 0xdeadbeef - security mistakes that will haunt your startup"
       image: deadbeef.png
       date: "Jun 2015"
-      action: Watch
+      type: video
       url: https://www.youtube.com/watch?v=aCGR4YnFC3U
 
     - title: "Securing Your Applications using Docker"
       image: securingyourapplicationusingdocker.png
       date: "Jun 2015"
-      action: Watch
+      type: video
       url: https://www.youtube.com/watch?v=KmxOXmPhZbk
 
     - title: "An IDS for Browser Hijacking"
       image: browserids.png
       date: "May 2015"
-      action: View
+      type: slide
       url: http://www.slideshare.net/diogomonica/an-ids-for-browser-hijacking
 
     - title: "Least Privilege Microservices"
       image: leastprivilege.png
       date: "Apr 2015"
-      action: Watch
+      type: video
       url: https://www.youtube.com/watch?v=8mUm0x1uy7c
 
     - title: "Local password validation using Self-Organizing Maps"
       image: soms.png
       date: "Aug 2014"
-      action: View
+      type: slide
       url: http://www.slideshare.net/diogomonica/esorics-2014-local-password-validation-using-selforganizing-maps
 
     - title: "Human Botnet: Scaling Your Security Organization"
       image: humanbotnet.png
       date: "May 2014"
-      action: Watch
+      type: video
       url: https://www.youtube.com/watch?v=rN6veD6Jdms
 
     - title: "Crypto-Anchoring: Defending against offline attacks"
       image: cryptoanchors.png
       date: "Feb 2014"
-      action: Watch
+      type: video
       url: https://www.youtube.com/watch?v=lrGbK6fE7bI
 
     - title: "Multipath TCP: The Path to Multipath"
       image: mptcp.png
       date: "Feb 2014"
-      action: View
+      type: slide
       url: http://www.slideshare.net/diogomonica/multipath-tcp-the-path-to-multipath-34457245
 
     - title: "Leveraging Honest Users: Stealth Command-and-Control of Botnets"
       image: botnets.png
       date: "Jul 2013"
-      action: Watch
+      type: video
       url: https://www.youtube.com/watch?v=6iM2jbheJ-0
 
     - title: "Bletchley: Dealing with HSMs so you don't have to"
       image: bletchley.png
       date: "May 2013"
-      action: View
+      type: slide
       url: http://www.slideshare.net/diogomonica/bletchley
 
     - title: "WiFiHop - mitigating the Evil twin attack through multi-hop detection"
       image: wifihop.png
       date: "Sep 2011"
-      action: View
+      type: slide
       url: http://www.slideshare.net/diogomonica/wifihop-mitigating-the-evil-twin-attack-through-multihop-detection
 
     - title: "Observable Non-Sybil Quorums Construction in One-Hop Wireless Ad Hoc Networks"
       image: quorums.png
       date: "Jun 2010"
-      action: View
+      type: slide
       url: http://www.slideshare.net/diogomonica/observable-nonsybil-quorums-construction-in-onehop-wireless-ad-hoc-networks
 
     - title: "On the Use of Radio Resource Tests in Wireless ad hoc Networks"
-      image: RTT.png
+      image: rtt.png
       date: "Jun 2009"
-      action: View
+      type: slide
       url: www.slideshare.net/diogomonica/on-the-use-of-radio-resource-tests-in-wireless-ad-hoc-networks

@@ -14,11 +14,18 @@ group: "navigation"
             {% for n in page.yml.entries %}
                 <div class="timeline-point">
                     <div class="timeline-point-info">
-                        <h4>{{ n.title }}</h4>
-                        <p>{{ n.description }}</p>
-                        <button class="button">{{ n.action }}</button>
+                        <a href="{{ n.url }}">
+                            <h6>{{ n.title }}</h6>
+                            {% if n.description %}
+                                <p>{{ n.description }}</p>
+                            {% endif %}
+                            {% if n.image %}
+                                <img src="/images/timeline/{{ n.image }}">
+                            {% endif %}
+                        </a>
                     </div>
                     <span class="date">{{ n.date }}</span>
+                    <span class="icon {% if n.type == 'video' %}fa-video-camera{% elsif n.type == 'slide' %}fa-picture-o{% else %}fa-link{% endif %}"></span>
                 </div>
             {% endfor %}
         </div>
