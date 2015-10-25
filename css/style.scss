@@ -1219,7 +1219,7 @@ $size-header: 23em;
     		font-style: italic;
     	}
 
-    	.icon {
+    	.point {
     		position: absolute;
     		top: 4px;
     		width: $timelinePointWidth;
@@ -1298,8 +1298,20 @@ $size-header: 23em;
     		border-bottom: 0;
 
     		&:hover {
-    			img {
-    				@include vendor-property('filter', 'blur(2px)');
+    			.img-container:before {
+    				content: '';
+    				position: absolute;
+    				top: 0;
+    				left: 0;
+    				width: 100%;
+    				height: 100%;
+    				background: $black;
+    				opacity: 0.4;
+    				border-radius: 10px;
+    			}
+
+    			.go {
+    				display: block;
     			}
     		}
     	}
@@ -1309,8 +1321,31 @@ $size-header: 23em;
     		text-transform: capitalize;
     	}
 
+    	.img-container {
+    		position: relative;
+    	}
+
     	img {
     		max-width: 100%;
+    		vertical-align: top;
     		border-radius: 10px;
+    	}
+
+    	.go {
+    		display: none;
+    		position: absolute;
+    		top: 50%;
+    		left: 50%;
+    		margin: $timelinePointWidth / -2;
+    		width: $timelinePointWidth;
+    		height: $timelinePointWidth;
+    		color: $white;
+    		font-size: $timelinePointWidth + 10;
+    		line-height: $timelinePointWidth;
+    		text-align: center;
+    		border-radius: 50%;
+    		&:before {
+    			margin: -1px;
+    		}
     	}
 	}

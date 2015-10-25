@@ -7,7 +7,7 @@ group: "navigation"
 
 <section id="one">
     <div class="container">
-        <h3>Media Timeline</h3>
+        <h3 class="align-center">Media Timeline</h3>
 
         <div class="timeline-container">
 
@@ -16,16 +16,14 @@ group: "navigation"
                     <div class="timeline-point-info">
                         <a href="{{ n.url }}">
                             <h6>{{ n.title }}</h6>
-                            {% if n.description %}
-                                <p>{{ n.description }}</p>
-                            {% endif %}
-                            {% if n.image %}
+                            <div class="img-container">
                                 <img src="/images/timeline/{{ n.image }}">
-                            {% endif %}
+                                <span class="go icon {% if n.type == 'video' %}fa-play-circle{% elsif n.type == 'slide' %}fa-arrow-circle-right{% else %}fa-arrow-circle-right{% endif %}"></span>
+                            </div>
                         </a>
                     </div>
                     <span class="date">{{ n.date }}</span>
-                    <span class="icon {% if n.type == 'video' %}fa-video-camera{% elsif n.type == 'slide' %}fa-picture-o{% else %}fa-link{% endif %}"></span>
+                    <span class="point icon {% if n.type == 'video' %}fa-video-camera{% elsif n.type == 'slide' %}fa-picture-o{% else %}fa-link{% endif %}"></span>
                 </div>
             {% endfor %}
         </div>
