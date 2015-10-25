@@ -191,13 +191,9 @@
 		}
 
 		&:nth-child(2n) {
-			.timeline-point-info {
-				float: none;
-    			right: auto;
-			}
-
 			.date {
 				right: auto;
+				left: 15px;
 			}
 
 			.point {
