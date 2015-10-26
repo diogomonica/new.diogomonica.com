@@ -1208,11 +1208,12 @@ $size-header: 23em;
 		position: relative;
     	float: left;
     	width: 50%;
+    	padding: 0 40px;
     	margin: 30px 0 60px;
 
     	.date {
     		position: absolute;
-    		top: 13px;
+    		top: 15px;
     		left: -25px;
     		color: $darkGrey;
     		font-size: 13px;
@@ -1222,9 +1223,10 @@ $size-header: 23em;
     	.point {
     		position: absolute;
     		top: 4px;
+    		right: 0;
     		width: $timelinePointWidth;
     		height: $timelinePointWidth;
-    		margin-left: $timelinePointWidth / -2;
+    		margin-right: $timelinePointWidth / -2;
     		border: 2px solid $white;
     		background-color: $diogoLightBlue;
     		color: $white;
@@ -1237,10 +1239,6 @@ $size-header: 23em;
     	&:nth-child(2n) {
     		float: right;
     		.timeline-point-info {
-    			float: right;
-    			right: -$timelinePointWidth;
-    			left: auto;
-
     			&:before {
     				left: -9px;
     			}
@@ -1254,6 +1252,11 @@ $size-header: 23em;
     			right: -25px;
     			left: auto;
     		}
+
+    		.point {
+    			left: 0;
+    			margin-left: $timelinePointWidth / -2;
+    		}
     	}
 
     	&:nth-child(2) {
@@ -1263,9 +1266,6 @@ $size-header: 23em;
 
 	.timeline-point-info {
 		position: relative;
-    	float: left;
-    	left: -$timelinePointWidth;
-    	width: 100%;
     	padding: 15px;
     	background-color: #f0f0f0;
     	border-radius: 5px;
@@ -1312,6 +1312,9 @@ $size-header: 23em;
 
     	.img-container {
     		position: relative;
+    		max-height: 200px;
+    		overflow: hidden;
+    		border-radius: 10px;
     		&:before {
     			content: '';
     			display: none;
@@ -1329,7 +1332,6 @@ $size-header: 23em;
     	img {
     		max-width: 100%;
     		vertical-align: top;
-    		border-radius: 10px;
     	}
 
     	.go {
@@ -1338,13 +1340,9 @@ $size-header: 23em;
     		top: 50%;
     		left: 50%;
     		margin: $timelinePointWidth / -2;
-    		width: $timelinePointWidth;
-    		height: $timelinePointWidth;
     		color: $white;
     		font-size: $timelinePointWidth + 10;
     		line-height: $timelinePointWidth;
-    		text-align: center;
-    		border-radius: 50%;
     		&:before {
     			margin: -1px;
     		}

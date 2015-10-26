@@ -187,17 +187,15 @@
 
 		.point {
 			left: -60px;
-			margin-left: 0;
 		}
 
 		&:nth-child(2n) {
 			.date {
-				right: auto;
 				left: 15px;
 			}
 
 			.point {
-				left: -60px;
+				left: -40px;
 			}
     	}
 
