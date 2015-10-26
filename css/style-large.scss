@@ -29,7 +29,8 @@ $size-header: 20em;
 
 	#wrapper {
 		@if $side-header == 'right' {
-			padding-right: $size-header;
+			/*padding-right: $size-header;*/
+			padding-left: $size-header;
 		}
 		@else {
 			padding-left: $size-header;

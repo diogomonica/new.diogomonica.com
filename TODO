@@ -2,9 +2,6 @@
 - Change the font to roboto
 - Fix header footer bug
 - Make pictures have max size in posts
-- Make bio picture go back to home (Desktop)
-- Main Picture on mobile should take user back to Home (the big one before the hamburger shows up)
-- BUG: On mobile, the picture on top left if over the hamburger
 - Add social media sharing widget at the end of the post
 - Add up-next blog post at the end of each post (or "If you like this post, you should checkout my talks " with link to timeline
 - Support facebook's open-graph tags

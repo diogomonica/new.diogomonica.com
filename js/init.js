@@ -35,7 +35,7 @@
 					height: '100%',
 					animation: 'pushX',
 					position: 'top-right',
-					side: 'left',
+					side: 'right',
 					orientation: 'vertical',
 					clickToHide: true,
 					html: '<div data-action="moveElement" data-args="header"></div>'
@@ -49,11 +49,10 @@
 $(document).ready(function() {
 	// hide/show fixed mobile header
 	var $header = $('#titleBar');
-	var $infoHeader = $('#info-header');
 
     var checkScrollPosition = function() {
         var windowTop = $(window).scrollTop();
-        var isPastTop = windowTop > $infoHeader.outerHeight();
+        var isPastTop = windowTop > 10;
         var isStuck = $header.hasClass('stuck');
 
         if( isPastTop && !isStuck ) {

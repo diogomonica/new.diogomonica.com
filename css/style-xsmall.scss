@@ -17,14 +17,13 @@
 	}
 
 	body, input, select, textarea {
-		font-size: 12pt;
+
 	}
 
 /* List */
 
 	ul {
 		&.actions {
-			margin: 0 0 $size-element-margin 0;
 
 			li {
 				display: block;

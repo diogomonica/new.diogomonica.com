@@ -941,7 +941,8 @@ $size-header: 23em;
 		box-shadow: 0 0 5px rgba(0,0,0,0.8);
 
 		@if $side-header == 'right' {
-			right: 0;
+			/*right: 0;*/
+			left: 0;
 		}
 		@else {
 			left: 0;
@@ -1076,10 +1077,15 @@ $size-header: 23em;
 			width: 100%;
 			height: 100%;
 			text-align: center;
-			img {
+			a {
+				display: block;
 				width: 80px;
     			height: 80px;
-    			margin-top: 8px;
+    			border-bottom: 0;
+    			margin: 8px auto 0;
+			}
+			img {
+				width: 100%;
 			}
 			p {
 				margin: 0 40px;
@@ -1094,7 +1100,8 @@ $size-header: 23em;
 		background: $color-bg;
 
 		@if $side-header == 'right' {
-			padding-right: $size-header;
+			/*padding-right: $size-header;*/
+			padding-left: $size-header;
 		}
 		@else {
 			padding-left: $size-header;
