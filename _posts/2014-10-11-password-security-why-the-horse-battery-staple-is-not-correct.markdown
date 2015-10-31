@@ -56,13 +56,13 @@ Password validation heuristic rules, (e.g. minimum length, forceful use of alpha
 
 These heuristics are inadvertently leading users to the repeated use of very common solutions, which can be easily remembered, while still obeying the requirements. In fact, users typically circumvent the imposed pseudo-randomness by using a few common tricks ("p@ssw0rd" being a typical example), which are then used repeatedly.
 
-This leads to the repeated use of what are, in fact, very weak passwords, highly vulnerable to statistical guessing attacks (a dictionary based attack ordered by decreasing probability of occurrence). 
+This leads to the repeated use of what are, in fact, very weak passwords, highly vulnerable to statistical guessing attacks (a dictionary based attack ordered by decreasing probability of occurrence).
 
 When coupled with the predominance of dictionary based attacks and leaks of large password data sets, this situation has led, in later years, to the idea that the single most useful criterion on which to classify the strength of a candidate password, is the frequency with which it has appeared in the past.
 
 <div class="image_cont">
-<img src="/images/password-security-why-the-horse-battery-staple-is-not-correct/distribution1.png" width="300" style="display:inline" />
-<img src="/images/password-security-why-the-horse-battery-staple-is-not-correct/distribution2.png" width="300" style="display:inline"/>
+<img src="/images/password-security-why-the-horse-battery-staple-is-not-correct/distribution1.png" width="300" />
+<img src="/images/password-security-why-the-horse-battery-staple-is-not-correct/distribution2.png" width="300" />
 </div>
 
 This means that instead of a password strength meter you should be ensuring that there is no skew in the distribution of passwords. If each password is guaranteed to be unique, the advantage of a statistical guessing attack is greatly reduced.
@@ -83,7 +83,7 @@ Finally, we should be evaluating the strength of passwords based on the frequenc
 
 ## Ultimately, Passwords should die
 
-As a longer term strategy, we are moving to kill the use of passwords as the single authentication mechanism, and enforcing multi-factor authentication as the default everywhere. 
+As a longer term strategy, we are moving to kill the use of passwords as the single authentication mechanism, and enforcing multi-factor authentication as the default everywhere.
 
 For the time being, we should focus some of our efforts on providing passwords the essential Basic life support they need.
 

@@ -522,7 +522,8 @@ $size-header: 23em;
 	.post-content img {
 		display: block;
 		width: 100%;
-		margin: 0 0 2.25em 0;
+		max-width: 400px;
+		margin: 0 auto 30px;
 		border-radius: $size-border-radius;
 	}
 
@@ -1319,7 +1320,7 @@ $size-header: 23em;
 
     	.img-container {
     		position: relative;
-    		max-height: 200px;
+    		max-height: 150px;
     		overflow: hidden;
     		border-radius: 10px;
     		&:before {

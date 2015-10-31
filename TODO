@@ -1,7 +1,6 @@
 - Add sliding animation to header show/hide
 - Change the font to roboto
 - Fix header footer bug
-- Make pictures have max size in posts
 - Add social media sharing widget at the end of the post
 - Add up-next blog post at the end of each post (or "If you like this post, you should checkout my talks " with link to timeline
 - Support facebook's open-graph tags
