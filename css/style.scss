@@ -5,7 +5,7 @@
 @import 'mixins';
 @import 'font-awesome.min.css';
 @import 'syntax.css';
-@import url('http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400italic,500|Inconsolata');
 
 /*
 	Read Only by HTML5 UP
@@ -54,7 +54,7 @@ $size-header: 23em;
 	}
 
 	p {
-		margin: 0 0 $size-element-margin 0;
+		margin: 0 0 20px 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -71,24 +71,23 @@ $size-header: 23em;
 	}
 
 	h2 {
-		margin-bottom: 24px;
-		font-size: 48px;
-		line-height: 60px;
+		font-size: 36px;
+		line-height: 45px;
 	}
 
 	h3 {
 		font-size: 30px;
-		line-height: 45px;
+		line-height: 37px;
 	}
 
 	h4 {
-		font-size: 1.25em;
-		line-height: 1.5em;
+		font-size: 24px;
+		line-height: 30px;
 	}
 
 	h5 {
-		font-size: 0.9em;
-		line-height: 1.5em;
+		font-size: 21px;
+		line-height: 26px;
 	}
 
 	h6 {
@@ -129,7 +128,7 @@ $size-header: 23em;
 		padding: 20px;
 		margin: 0;
 		font-family: $font-family-fixed;
-		font-size: 0.9em;
+		font-size: 13px;
 		background-color: $black;
 		color: #f0f0f0;
 		border-radius: $size-border-radius;
@@ -141,7 +140,7 @@ $size-header: 23em;
 		padding-top: 30px;
 		margin: 0 0 $size-element-margin 0;
 		font-family: $font-family-fixed;
-		font-size: 0.9em;
+		font-size: 13px;
 
 		code {
 			-webkit-overflow-scrolling: touch;
@@ -247,17 +246,20 @@ $size-header: 23em;
 
 		&.major {
 			h2 {
+				margin-bottom: 10px;
 				& + p {
+					margin: 0 0 10px;
 					color: $darkGrey;
-					font-size: 15px;
-					font-weight: $font-weight-bold;
-					margin-top: 0;
+					font-size: 13px;
+					font-style: italic;
+					line-height: 20px;
 				}
 			}
 		}
 	}
 
 	footer {
+
 	}
 
 /* Form */
@@ -519,14 +521,6 @@ $size-header: 23em;
 		}
 	}
 
-	.post-content img {
-		display: block;
-		width: 100%;
-		max-width: 400px;
-		margin: 0 auto 30px;
-		border-radius: $size-border-radius;
-	}
-
 /* List */
 
 	ol {
@@ -541,7 +535,7 @@ $size-header: 23em;
 
 	ul {
 		list-style: disc;
-		margin: 0 0 $size-element-margin 0;
+		margin: 0 0 20px 0;
 		padding-left: 1em;
 
 		li {
@@ -599,14 +593,14 @@ $size-header: 23em;
 			li {
 				display: inline-block;
 				padding: 0;
-    			margin-right: 25px;
+    			margin-right: 20px;
 
 				&:last-child {
 					margin-right: 0;
 				}
 
 				.icon {
-					font-size: 20px;
+					font-size: 24px;
 				}
 			}
 		}
@@ -929,6 +923,25 @@ $size-header: 23em;
 	    }
 	}
 
+/* Posts */
+
+	.post-content {
+		margin-bottom: 60px;
+		h2,
+		h3 {
+			margin: 40px 0 20px;
+			font-size: 24px;
+			line-height: 30px;
+		}
+		img {
+			display: block;
+			width: 100%;
+			max-width: 400px;
+			margin: 0 auto 30px;
+			border-radius: $size-border-radius;
+		}
+	}
+
 /* Header */
 
 	#header {
@@ -988,7 +1001,7 @@ $size-header: 23em;
 			p {
 				margin: 20px 0 0 0;
 				font-size: 15px;
-				font-style: italic;
+				line-height: 22px;
 			}
 		}
 
@@ -1013,22 +1026,23 @@ $size-header: 23em;
 				li {
 					display: block;
 					padding: 0;
-					margin: 0 40px;
+					margin: 0 30px;
 
 					a {
 						display: block;
 						padding: 15px 0;
-						border-top: 1px solid rgba(255,255,255,0.2);
+						border-top: 1px solid rgba(255,255,255,0.1);
 						border-bottom: 0;
-						font-size: 15px;
+						font-size: 13px;
+						line-height: 20px;
 						text-decoration: none;
 						@include vendor-property('transition', 'none');
 					}
 
 					&.active {
 						a {
-							margin: 0px -40px;
-							background: rgba(255,255,255,0.2);
+							margin: 0px -30px;
+							background: rgba(255,255,255,0.1);
 						}
 						&,
 						& + li {
@@ -1123,18 +1137,19 @@ $size-header: 23em;
 
 	.pagination {
 		position: relative;
-		height: 28px;
+		height: 30px;
 		margin: 20px 0;
 		text-align: center;
 		.page-number {
 			font-size: 13px;
-			font-style: oblique;
+			font-style: italic;
 		}
 		.prev,
 		.next {
 			position: absolute;
 			color: $diogoLightBlue;
-			font-size: 14px;
+			font-size: 13px;
+			font-weight: $font-weight-bold;
 			letter-spacing: 2px;
     		text-transform: uppercase;
 		}
@@ -1170,16 +1185,18 @@ $size-header: 23em;
 	#footer {
 		width: 100%;
 		padding: 20px;
-		margin-top: 20px;
 		background: #f0f0f0;
 		color: #c0c0c0;
 		overflow: hidden;
 		.copyright {
+			list-style: none;
 			padding-left: 0;
     		margin-bottom: 0;
 			li {
-				font-size: 16px;
+				padding-left: 0;
+				font-size: 15px;
     			line-height: 20px;
+    			text-align: center;
 				a {
 					border-bottom: 0;
 					color: $diogoLightBlue;

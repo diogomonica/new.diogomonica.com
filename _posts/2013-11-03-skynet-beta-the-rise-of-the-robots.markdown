@@ -6,7 +6,7 @@ tags: [ beam, java, python, TLS, mitm]
 categories: sleuthing
 ---
 
-<img src="/images/skynet-beta-the-rise-of-the-robots/beam_robot.jpg" width="150" style="float:left; margin-right: 20px;"/>
+<img src="/images/skynet-beta-the-rise-of-the-robots/beam_robot.jpg" width="150"/>
 
 At work we bought a few telepresence robots from [SuitableTech](https://suitabletech.com/) called Beam. The Beam robots allow anyone from a remote location to have face-to-face interaction with the people at our HQ.
 
@@ -92,6 +92,6 @@ The team at SuitableTech seems to be really awesome, and they were super quick t
 
 I had a lot of fun playing with the Beams. It turned out that compromising credentials from the client application was surprisingly easy, allowing arbitrary Beam control to any attacker capable of a MITM attack during login. In this particular case, the most damaging atack would be to cruise around the remote office and maybe steal a few secrets, but what if the Beam's had [laser beams attached to their heads](https://www.youtube.com/watch?v=Q5BAnPeXYTI)?
 
-I still intend to try attack the Beams directly and see if I can get anything there, but as I mentioned before, the conceptual security model for the Beams seems to be pretty solid and I doubt I'm going to be able to find any other trivial issues like this. 
+I still intend to try attack the Beams directly and see if I can get anything there, but as I mentioned before, the conceptual security model for the Beams seems to be pretty solid and I doubt I'm going to be able to find any other trivial issues like this.
 
 This said, you never know ;).

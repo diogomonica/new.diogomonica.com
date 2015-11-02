@@ -13,8 +13,7 @@
 /* Basic */
 
 	body, input, select, textarea {
-		font-size: 16px;
-		line-height: 28px;
+
 	}
 
 /* Image */
@@ -40,26 +39,40 @@
 		right: auto;
 		top: auto;
 		width: 100%;
-
-		> footer {
-			bottom: auto;
-			left: auto;
-			margin: 1em 0 0 0;
-			position: relative;
-			right: auto;
-			top: auto;
-		}
+		box-shadow: none;
 	}
 
 /* Info Blurb */
 	#info-header {
 		display: block;
+
+		.bg-content {
+			a {
+				margin: 20px auto;
+			}
+
+			p {
+				width: 370px;
+				max-width: 100%;
+				margin: 20px auto;
+			}
+		}
 	}
 
 /* Wrapper */
 
 	#wrapper {
 		padding: 0;
+	}
+
+/* Main */
+
+	#main {
+		> section {
+			> .container {
+				padding: 40px 0;
+			}
+		}
 	}
 
 /* One */
@@ -157,12 +170,16 @@
 	#sidePanel {
 		background: $diogoBlue;
 		color: $white;
+
+		> div {
+			height: 100%;
+		}
 	}
 
 /* Pagination */
 
 	.pagination {
-		margin-bottom: 40px;
+		margin: 0;
 	}
 
 /* Footer */
