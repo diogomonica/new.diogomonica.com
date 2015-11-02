@@ -24,7 +24,7 @@ $size-header: 21em;
 		width: $size-header;
 
 		> header {
-			padding: 40px;
+			padding: 30px;
 		}
 
 		> footer {
@@ -49,7 +49,7 @@ $size-header: 21em;
 	#main {
 		> section {
 			> .container {
-				padding: 4em 0 2em 0;
+				padding: 60px 0 30px 0;
 			}
 		}
 	}
@@ -57,7 +57,7 @@ $size-header: 21em;
 /* Pagination */
 
 	.pagination {
-		margin: 40px 0 0;
+		margin: 30px 0 0;
 	}
 
 /* Footer */
