@@ -13,8 +13,8 @@
 /* Basic */
 
 	body, input, select, textarea {
-		font-size: 16px;
-		line-height: 28px;
+		font-size: 15px;
+		line-height: 26px;
 	}
 
 /* Image */
@@ -40,15 +40,7 @@
 		right: auto;
 		top: auto;
 		width: 100%;
-
-		> footer {
-			bottom: auto;
-			left: auto;
-			margin: 1em 0 0 0;
-			position: relative;
-			right: auto;
-			top: auto;
-		}
+		box-shadow: none;
 	}
 
 /* Info Blurb */
@@ -61,7 +53,8 @@
 			}
 
 			p {
-				width: 390px;
+				width: 370px;
+				max-width: 100%;
 				margin: 20px auto;
 			}
 		}
@@ -178,6 +171,10 @@
 	#sidePanel {
 		background: $diogoBlue;
 		color: $white;
+
+		> div {
+			height: 100%;
+		}
 	}
 
 /* Pagination */

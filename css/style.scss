@@ -259,6 +259,7 @@ $size-header: 23em;
 	}
 
 	footer {
+
 	}
 
 /* Form */
@@ -517,23 +518,6 @@ $size-header: 23em;
 				display: block;
 				width: 100%;
 			}
-		}
-	}
-
-	.post-content {
-		margin-bottom: 60px;
-		h2,
-		h3 {
-			margin: 40px 0 20px;
-			font-size: 24px;
-			line-height: 30px;
-		}
-		img {
-			display: block;
-			width: 100%;
-			max-width: 400px;
-			margin: 0 auto 30px;
-			border-radius: $size-border-radius;
 		}
 	}
 
@@ -937,6 +921,25 @@ $size-header: 23em;
 	    p {
 	        margin-bottom: 20px;
 	    }
+	}
+
+/* Posts */
+
+	.post-content {
+		margin-bottom: 60px;
+		h2,
+		h3 {
+			margin: 40px 0 20px;
+			font-size: 24px;
+			line-height: 30px;
+		}
+		img {
+			display: block;
+			width: 100%;
+			max-width: 400px;
+			margin: 0 auto 30px;
+			border-radius: $size-border-radius;
+		}
 	}
 
 /* Header */
