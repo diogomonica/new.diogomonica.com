@@ -54,12 +54,33 @@
 /* Info Blurb */
 	#info-header {
 		display: block;
+
+		.bg-content {
+			a {
+				margin: 20px auto;
+			}
+
+			p {
+				width: 390px;
+				margin: 20px auto;
+			}
+		}
 	}
 
 /* Wrapper */
 
 	#wrapper {
 		padding: 0;
+	}
+
+/* Main */
+
+	#main {
+		> section {
+			> .container {
+				padding: 40px 0;
+			}
+		}
 	}
 
 /* One */
@@ -162,7 +183,7 @@
 /* Pagination */
 
 	.pagination {
-		margin-bottom: 40px;
+		margin: 0;
 	}
 
 /* Footer */

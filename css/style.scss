@@ -1182,16 +1182,18 @@ $size-header: 23em;
 	#footer {
 		width: 100%;
 		padding: 20px;
-		margin-top: 20px;
 		background: #f0f0f0;
 		color: #c0c0c0;
 		overflow: hidden;
 		.copyright {
+			list-style: none;
 			padding-left: 0;
     		margin-bottom: 0;
 			li {
-				font-size: 16px;
+				padding-left: 0;
+				font-size: 15px;
     			line-height: 20px;
+    			text-align: center;
 				a {
 					border-bottom: 0;
 					color: $diogoLightBlue;
