@@ -771,7 +771,7 @@ $size-header: 23em;
 		@include vendor-property('transition', 'background-color #{$duration-transition} ease-in-out, color #{$duration-transition} ease-in-out');
 
 		display: inline-block;
-		width: 200px;
+		width: 205px;
 		height: $size-element-height;
 		padding: 0 1.5em;
 		border: 0;
@@ -1033,7 +1033,7 @@ $size-header: 23em;
 						padding: 15px 0;
 						border-top: 1px solid rgba(255,255,255,0.1);
 						border-bottom: 0;
-						font-size: 13px;
+						font-size: 16px;
 						line-height: 20px;
 						text-decoration: none;
 						@include vendor-property('transition', 'none');
@@ -1067,7 +1067,7 @@ $size-header: 23em;
 		display: none;
 		position: relative;
 		width: 100%;
-		height: 200px;
+		height: 205px;
 		.bg-image {
 			width: 100%;
 			height: 100%;
@@ -1203,6 +1203,10 @@ $size-header: 23em;
 					&:before {
 						margin-right: 5px;
 					}
+					&:hover {
+    					color: darken($diogoLightBlue, 20);
+    				}
+
 				}
 			}
 		}
