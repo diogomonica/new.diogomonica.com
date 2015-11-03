@@ -80,6 +80,18 @@
 		padding: 0;
 	}
 
+/* Info Blurb */
+	#info-header {
+		.bg-content {
+			p {
+				width: 250px;
+				font-size: 13px;
+				line-height: 20px;
+			}
+		}
+	}
+
+
 /* Timeline */
 
 	.timeline-container {
