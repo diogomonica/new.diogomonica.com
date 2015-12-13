@@ -5,6 +5,12 @@ entries:
       type: video
       url: https://www.youtube.com/watch?v=blNIreAq6hc
 
+    - title: "Web Summit 2015: Cloud, Open-source, Security"
+      image: cloud_opensource_security.png
+      date: "Nov 2015"
+      type: slide
+      url: https://www.slideshare.net/diogomonica/web-summit-2015-enterprise-stage-cloud-opensource-security
+
     - title: "A Docker image walks into a Notary"
       image: notary.png
       date: "Sep 2015"
