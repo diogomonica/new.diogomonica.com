@@ -1,4 +1,10 @@
 entries:
+    - title: "Green Font, Black Background – Docker Security by Example"
+      image: security_by_example.png
+      date: "Nov 2015"
+      type: video
+      url: https://www.youtube.com/watch?v=blNIreAq6hc
+
     - title: "A Docker image walks into a Notary"
       image: notary.png
       date: "Sep 2015"
