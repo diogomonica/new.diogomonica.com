@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 'Password Security: Why the horse battery staple is not correct'
-description:
+description: 'Why the horse battery staple is not correct: We should **not** be incentivizing people to choose passwords in the first place.'
+thumbnail: password-security-why-the-horse-battery-staple-is-not-correct/xkcd_comic.png
 tags: [passwords]
 ---
 
