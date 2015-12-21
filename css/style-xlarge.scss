@@ -4,13 +4,10 @@
 @import 'vars';
 @import 'mixins';
 
-/*
-	Read Only by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 $size-header: 20em;
+
+@media screen and (max-width: 1680px) {
 
 /* Basic */
 
@@ -65,3 +62,4 @@ $size-header: 20em;
 	#footer {
 		display: none;
 	}
+}
