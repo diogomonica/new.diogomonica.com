@@ -3,3 +3,6 @@
 - Add social media sharing widget at the end of the post
 - Add up-next blog post at the end of each post (or "If you like this post, you should checkout my talks " with link to timeline
 - Support facebook's open-graph tags
+- Bug when in x-large on the Media Timeline page (the box with the text becomes a lot larger than the picture)
+- Bug when opening the console and the twitter and github icons in the side-bar get moved over the Profile picture
+- Fixing the css loading to not happen over javascript (so it won't snap)
