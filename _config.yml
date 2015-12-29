@@ -21,6 +21,9 @@ kramdown:
 gems:
   - jekyll-sitemap
   - jekyll-paginate
-  
-sass:
-    style: compressed
+  - jekyll/minibundle
+
+minibundle:
+  minifier_commands:
+    js: uglifyjs -
+    css: cat -
