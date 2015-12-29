@@ -9,9 +9,9 @@
   <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
 {% endif %}
 {% if page.description %}
-  <meta name="twitter:description" content="{{ page.description }}">
+  <meta name="twitter:description" content="{{ page.description | strip_html }}">
 {% else %}
-  <meta name="twitter:description" content="{{ site.description }}">
+  <meta name="twitter:description" content="{{ site.description | strip_html }}">
 {% endif %}
 {% if page.thumbnail %}
   <meta name="twitter:image:src" content="{{ site.url }}/images/{{ page.thumbnail }}">

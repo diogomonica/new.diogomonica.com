@@ -27,3 +27,5 @@ minibundle:
   minifier_commands:
     js: uglifyjs -
     css: cat -
+
+fb_admins: https://facebook.com/diogo.monica
