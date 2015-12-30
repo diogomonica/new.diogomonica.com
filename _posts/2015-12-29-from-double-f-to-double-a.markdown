@@ -6,24 +6,24 @@ thumbnail: from-double-f-to-double-a/a_plus.png
 tags: [ssl, tls, security headers, ssllabs]
 ---
 
-Even though diogomonica.com is a statically generated blog created using [jekyll](https://jekyllrb.com), it's always fun to run it through security evaluation websites such as [SSL Labs](https://www.ssllabs.com/ssltest/) and [Security Headers](https://securityheaders.io).
+Even though diogomonica.com is a statically generated blog, created using [Jekyll](https://jekyllrb.com), it's always fun to run it through security evaluation websites such as [SSL Labs](https://www.ssllabs.com/ssltest/) and [Security Headers](https://securityheaders.io).
 
-Unfortunately, last week when I ran it through [securityheaders.io](https://securityheaders.io)'s checker, I got the following result:
+Unfortunately, last week, when I ran it through [securityheaders.io](https://securityheaders.io)'s checker, I got the following result:
 
 <img src="/images/from-double-f-to-double-a/f_rating_on_security_headers.png"/>
 
-This is obviously embarrassing for someone that works in security, and even though my blog has no need for advanced security headers I decided to change that rating to an A+.
+This is obviously embarrassing for someone who works in security, and even though my blog has no need for advanced security headers, I decided to change that rating to an A+.
 
 ## What are these headers?
 
-Before we turn those red warning boxes into a more pleasant light green, let me give you a high-level overview of what these headers are and why you should make sure to include them on your web properties.
+Before we turn those red warning boxes into a more pleasant light green, let me give you a high-level overview of what these headers are, and why you should make sure to include them in your web properties.
 
-- **Content-Security-Policy (CSP)**: allows the website to define a policy around what domains external javascripts, css, images, etc, can be imported and rendered from. Prevents XSS and other cross-site injections.
+- **Content-Security-Policy (CSP)**: allows the website to define a policy concerning which domains external javascripts, css, images, etc, can be imported and rendered from. Prevents XSS and other cross-site injections.
 - **X-Content-Type-Options**: prevents IE and Google Chrome from MIME-sniffing a response away from the declared content-type.
 - **X-Frame-Options**: protects against clickjacking attacks.
 - **X-XSS-Protection**: essentially useless; it comes enabled by default in modern browsers.
-- **Strict-Transport-Security (HSTS)**: tells your browser to always connect to a particular domain over HTTPS. Attackers aren't able to downgrade connections and users can't ignore TLS warnings. 
-- **Public-Key-Pins (HPKP)**: tells your browser associate a specific public key fingerprint with a particular domain. Prevents against an attacker getting a valid certificate from one of the hundreds of other Certificate Authorities out there.
+- **Strict-Transport-Security (HSTS)**: tells your browser to always connect to a particular domain over HTTPS. Attackers aren't able to downgrade connections, and users can't ignore TLS warnings. 
+- **Public-Key-Pins (HPKP)**: tells your browser to associate a specific public key fingerprint with a particular domain. Prevents against an attacker getting a valid certificate from one of the hundreds of other Certificate Authorities out there.
 
 
 ## Fixing the easy ones
@@ -38,48 +38,46 @@ add_header X-Content-Type-Options nosniff;
 add_header X-XSS-Protection "1; mode=block";
 {% endhighlight %}
 
-There isn't a lot to consider when chosing the arguments for these three headers, but if you want more information about them, make sure you consult the [Mozilla Headers page](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers).
+There isn't a lot to consider when choosing the arguments for these three headers, but if you want more information about them, make sure you consult the [Mozilla Headers page](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers).
 
 ## Adding HSTS and CSP to the mix
-
-Deploying CSP and HSTS might have serious impact on your website. Remember that I'm making changes on my personal blog here; if I break it, no one will ever complain.
 
 If you deploy an over-aggressive CSP policy, browsers might disallow resources from being loaded and your website will break. If you deploy an HSTS policy and at a later time disable HTTPS on your website/application, users will temporarily be disallowed access to your website.
 
 ### HSTS
 
-Since I'm always going to run my website over TLS, I'm enabling HSTS with a [*max-age*](https://developer.mozilla.org/en-US/docs/Web/Security/HTTP_strict_transport_security) parameter of 7776000 (seconds). This will tell browsers that for the next three months they should only attempt accessing diogomonica.com over HTTPS:
+Since I'm always going to run my website over TLS, I'm enabling HSTS with a [*max-age*](https://developer.mozilla.org/en-US/docs/Web/Security/HTTP_strict_transport_security) parameter of 7776000 (seconds). This will tell browsers that, for the next three months, they should only attempt accessing diogomonica.com over HTTPS:
 
 {% highlight bash %}
 add_header Strict-Transport-Security max-age=7776000;
 {% endhighlight %}
 
-Another important HSTS parameter is *includeSubDomains*, which I'm leaving disabled since it's common for me to run non-https demo sites under *.diogomonica.com. You should enable it if you're sure every single sub-domain will always be using HTTPS.
+Another important HSTS parameter is *includeSubDomains*, which I'm leaving disabled, since it's common for me to run non-https demo sites under *.diogomonica.com. You should enable it if you're sure every single sub-domain will always be using HTTPS.
 
 ### CSP
 
 CSP has two different modes of operation: enforce and report. If you use the *Content-Security-Policy* header, CSP will operate in enforce mode; if you use *Content-Security-Policy-Report-Only* it will operate in report mode.
 
-CSP is pretty complex and I recommend enabling it in report mode first, since it will allow you to understand the changes you need to make to enable enforcement later on. You should also read about the different [CSP policy directives](https://developer.mozilla.org/en-US/docs/Web/Security/CSP/CSP_policy_directives).
+CSP is pretty complex, and I recommend enabling it in report mode first, since it will allow you to understand the changes you need to make to enable enforcement later on. You should also read about the different [CSP policy directives](https://developer.mozilla.org/en-US/docs/Web/Security/CSP/CSP_policy_directives).
 
-In my particular case, since no one will ever complain about my blog being broken, I jumped straight to enforce mode and with the help of the Chrome Developer console I fixed the red-warnings one by one, resulting in this final policy:
+In my particular case, since no one will ever complain about my blog being broken, I jumped straight to enforce mode and, with the help of the Chrome Developer console, fixed the red-warnings one by one, resulting in this final policy:
 
 {% highlight bash %}
 add_header Content-Security-Policy "default-src 'self'; 
-script-src 'self' 'unsafe-inline' 'unsafe-eval' https://ssl.google-analytics.com https://ajax.cloudflare.com; 
+script-src 'self' 'unsafe-eval' https://ssl.google-analytics.com https://ajax.cloudflare.com; 
 img-src 'self' https://ssl.google-analytics.com ; 
 style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
 font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; 
 object-src 'none'";
 {% endhighlight %}
 
-After restarting my nginx server this is the current rating on [securityheaders.io](https://securityheaders.io):
+This is the current rating on [securityheaders.io](https://securityheaders.io), after restarting my nginx server:
 
 <img src="/images/from-double-f-to-double-a/all_green_but_one.png"/>
 
 ### Getting to A+ (enabling HPKP)
 
-HPKP works by having the browser look up the HPKP headers and check whether any of those pins match any of the [SPKI fingerprints](https://raymii.org/s/articles/HTTP_Public_Key_Pinning_Extension_HPKP.html) in the certificate chain. This means that you can use a pin from anywhere in the chain: from a leaf certificate all the way up to the root certificate.
+HPKP works by having the browser lookup the HPKP headers and check whether any of those pins match any of the [SPKI fingerprints](https://raymii.org/s/articles/HTTP_Public_Key_Pinning_Extension_HPKP.html) in the certificate chain. This means that you can use a pin from anywhere in the chain: from a leaf certificate all the way up to the root certificate.
 
 Since the [RFC](https://tools.ietf.org/html/rfc7469) states that you need to provide at least two pins, I created a new public/private key pair and stored it offline. After that, I got the SPKI fingerprint for both my keys. There are a [few different ways](https://developer.mozilla.org/en-US/docs/Web/Security/Public_Key_Pinning) to do it.
 
@@ -90,7 +88,7 @@ root@burly:/etc/ssl# openssl x509 -in cloudflare-diogomonica.com.crt -pubkey -no
 bDk6Wbfj83EpcaKgT5WkBfiiml66Tln3DskDJneGBoo=
 ```
 
-HPKP is probably the most dangerous of all the security headers. Like HSTS, if something goes wrong (your private key gets compromised), users might be disallowed from accessing your website for the duration you specify in your *max_age* argument. Also, like CSP, HPKP actually comes with a *Report-Only* version, which allows you to test your pins, without risking downtime. I reccomend this [great blog post](https://timtaubert.de/blog/2014/10/http-public-key-pinning-explained/) by Tim Taubert for more info on HPKP.
+HPKP is probably the most dangerous of all the security headers. Like HSTS, if something goes wrong (your private key gets compromised), users might be disallowed from accessing your website for the duration you specify in your *max_age* argument. Also, like CSP, HPKP actually comes with a *Report-Only* version, which allows you to test your pins, without risking downtime. I recommend this [great blog post](https://timtaubert.de/blog/2014/10/http-public-key-pinning-explained/) by Tim Taubert for more info on HPKP.
 
 As I mentioned before, the lack of readership of this blog allows me to jump right into enforcement mode, adding this new header to my nginx config:
 
@@ -100,11 +98,11 @@ add_header Public-Key-Pins 'pin-sha256="bDk6Wbfj83EpcaKgT5WkBfiiml66Tln3DskDJneG
 
 I will point out that, even though I was being cavalier, I did set a *max_age* of 60 seconds for testing, allowing me to simply disable the header and wait a minute if I messed the PINs somehow.
 
-If you want to reduce the risk of losing your keys or remove the need of having to deal with offline key-pairs, you can pin to a root CA. That will increase your surface of attack, but it will also make it easier to get a new valid certificate later. I would reccomend pining to Let's Encrypt, but be sure to read [this](https://community.letsencrypt.org/t/hpkp-best-practices-if-you-choose-to-implement/4625) before you do.
+If you want to reduce the risk of losing your keys or remove the need of having to deal with offline key-pairs, you can pin to a root CA. That will increase your surface of attack, but it will also make it easier to get a new valid certificate later. I would recommend pinning to Let's Encrypt, but be sure to read [this](https://community.letsencrypt.org/t/hpkp-best-practices-if-you-choose-to-implement/4625) before you do.
 
 ## Just show me the screenshot!
 
-After restarting nginx with all of our new headers, voilà, A+:
+After restarting nginx with all of our new headers, voilà, A+.
 
 <img src="/images/from-double-f-to-double-a/securityheaders_a_plus.png"/>
 

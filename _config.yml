@@ -2,7 +2,7 @@
 title: Diogo Mónica's Website
 email: diogo.monica@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-    Diogo is the security lead at Docker, led the Platform Security team at Square, has a PhD in Computer Science and serves on the board of advisors of several security startups.
+    Diogo is the security lead at Docker, led the Platform Security team at Square, has a PhD in Computer Science, and serves on the board of advisors of several security startups.
 baseurl: "" # the subpath of your site, e.g. /blog/
 permalink: pretty
 url: "https://diogomonica.com" # the base hostname & protocol for your site
