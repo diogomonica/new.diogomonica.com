@@ -108,6 +108,19 @@ After restarting nginx with all of our new headers, voilà, A+:
 
 <img src="/images/from-double-f-to-double-a/securityheaders_a_plus.png"/>
 
+## This sounds like a lot of work, can I cheat my way to A+?
+
+Since [securityheaders.io](https://securityheaders.io) is only checking for the presence of the header (it doesn't even attempt to parse parameters), the answer is yes:
+
+{% highlight bash %}
+add_header Strict-Transport-Security max-age=0;
+add_header X-Frame-Options "ANYTHINGREALLY";
+add_header X-Content-Type-Options anythingreally;
+add_header X-XSS-Protection "0";
+add_header Content-Security-Policy "default-src *";
+add_header Public-Key-Pins max-age=0;
+{% endhighlight %}
+
 ## What about getting an A+ on SSL Labs?
 
 If you're ok with an A, use [cloudflare](https://cloudflare.com). If you really want that A+, you can follow [this post](https://sethvargo.com/getting-an-a-plus-on-qualys-ssl-labs-tester/).
