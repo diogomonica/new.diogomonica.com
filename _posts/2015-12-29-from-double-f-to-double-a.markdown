@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'From F to A+: getting good grades on website security evaluations'
-description: "Even though I’m running a statically generated blog, I took the time to go from an F on securityheaders.io to an A+”
+description: 'Even though diogomonica.com is a statically generated html blog, I took the time to go from an F on securityheaders.io to an A+.'
 thumbnail: from-double-f-to-double-a/a_plus.png
 tags: [ssl, tls, security headers, ssllabs]
 ---
