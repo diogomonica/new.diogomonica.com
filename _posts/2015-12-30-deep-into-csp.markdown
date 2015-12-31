@@ -12,7 +12,7 @@ I'm going to assume some familiarity with the fundamentals of CSP. For a good in
 
 ## Starting a policy from scratch
 
-CSP follows a blacklist of whitelists model. If you include the header but don't include a specific directive, that is equivalent to specifying * as the valid source for that directive (i.e. everywhere). On the other hand, if you do include a directive, only the sources listed will be allowed.
+CSP follows a whitelist model. If you include the header but don't include a specific directive, that is equivalent to specifying * as the valid source for that directive (i.e. everywhere). On the other hand, if you do include a directive, only the sources listed will be allowed.
 
 There are a lot of directives that can be used to enforce policies for content types. You can see an exhaustive list of directives [here](https://developer.mozilla.org/en-US/docs/Web/Security/CSP/CSP_policy_directives). CSP also allows policies around particular circumstances, such as whether the browser should include referer headers when following links away from a page.
 
@@ -51,13 +51,11 @@ Even though generating CSP policies manually is incredibly instructive, it is al
 
 ## Testing the base policy
 
-At this point we have a strong initial policy that will not allow loading anything external to your own domain. Instead of deploying it in enforce mode, which would most likely break your website, we can swap out *Content-Security-Policy* for *Content-Security-Policy-Report-Only*, and get a comprehensive list of everything that doesn't follow this base policy. This is a good way of finding the minimum set of resources we have to allow to turn it into enforce mode.
-
-
+At this point we have a strong initial policy that will not allow loading anything external to your own domain. Instead of deploying it in enforce mode, which would most likely break your website, we can swap out *Content-Security-Policy* for *Content-Security-Policy-Report-Only*, and get a comprehensive list of everything that doesn't follow this base policy. This is a good way of finding the minimum set of necessary resources that we need to allow to enable enforce mode.
 
 <img src="/images/deep-into-csp/chrome_developer_console.png"/>
 
-The most common exceptions you will have to add are going to be external resources, such as javascript, images and fonts. For example, in order to allow the embedding of slideshare decks (see image above), I added the following directive:
+Some common exceptions you may have to add are going to be external resources, such as javascript, images and fonts. For example, in order to allow the embedding of slideshare decks (see image above), I added the following directive:
 
 {% highlight bash %}
 frame-src 'self' https://www.slideshare.net;
@@ -76,7 +74,7 @@ Note the change to *img-src* directive. Google analytics uses a tracking pixel, 
 
 ### Inline Code
 
-One of the reasons why CSP is such a big deal for web security, is the fact that it can largely eliminate XSS attacks. It does so by not allowing inline *script* tags and *javascript://* URLs. Unfortunately, developers use a lot of inline code. This is actually one of the most common roadblocks to creating a good CSP policy. 
+One of the reasons why CSP is such a big deal for web security is the fact that it can largely eliminate XSS attacks. It does so by not allowing inline *script* tags and *javascript://* URLs. Unfortunately, developers use a lot of inline code. This is actually one of the most common roadblocks to creating a good CSP policy. 
 
 There is a directive value that was created specifically to work around this issue: *unsafe-inline*, but you should never use it. Instead, you should [turn your inline javascript into an externally loaded script](http://stackoverflow.com/questions/21593051/converting-inline-javascript-to-external).
 
@@ -90,7 +88,7 @@ In my case, I signed up for [report-uri.io](https://report-uri.io), configured m
 report-uri https://report-uri.io/report/59e303e8e117668e8e166508913a6d1d;
 {% endhighlight%}
 
-This will be my own, unique URL, that browsers will send JSON reports to, concerning any violations on diogomonica.com. This is what a violation would look like:
+This will be my own, unique URL, which browsers will send JSON reports to, concerning any violations on diogomonica.com. This is what a violation would look like:
 
 <img src="/images/deep-into-csp/report.png"/>
 
@@ -114,9 +112,9 @@ And the corresponding JSON:
 
 Remember the earlier directives that don't inherit the default behavior? Well, we should explicitly set those to some reasonable values.
 
-- *frame-ancestors* specifies valid parents that may embed a page using the <frame> and <iframe> elements.
+- *frame-ancestors* specifies valid parents that may embed a page using *frame* and *iframe* elements.
 - *base-uri* defines the URIs that a user agent may use as the document base URL. 
-- *form-action* specifies valid endpoints for <form> submissions.
+- *form-action* specifies valid endpoints for *form* submissions.
 - *sandbox* [places restrictions on actions the page can take](https://html.spec.whatwg.org/multipage/browsers.html#sandboxing), instead of restricting resources it can load. It will be the topic of a future blog post.
 
 This is my final policy:
