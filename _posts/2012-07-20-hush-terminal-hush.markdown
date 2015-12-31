@@ -10,7 +10,7 @@ I've been noticing for a while a huge delay when opening new tabs and windows on
 
 ## Log craziness
 
-Turns out that for whatever reason `login -fp <username>` (the command that is executed when we open a new terminal), goes to the asl log directory and goes crazy reading all the files. Quick fix:
+Turns out that for whatever reason *login -fp username* (the command that is executed when we open a new terminal), goes to the asl log directory and goes crazy reading all the files. Quick fix:
 
 <pre>
 sudo rm -rf /private/var/log/asl/*.asl
@@ -29,7 +29,7 @@ touch ~/.hushlogin
 
 ## Too much user crap
 
-I also went through my `~/.bash_profile` and removed all the stuff that I no longer needed. Don't underestimate the impact that those utilities that show you which git branch you are currently on have in your terminal load time.
+I also went through my *~/.bash_profile* and removed all the stuff that I no longer needed. Don't underestimate the impact that those utilities that show you which git branch you are currently on have in your terminal load time.
 
 ## SSH connection reuse
 

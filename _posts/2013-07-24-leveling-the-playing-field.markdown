@@ -22,7 +22,7 @@ About a year and a half ago I fell in love with [State Bird Provisions](http://s
 
 One day I sat down, sshed into my remote server and wrote the following chron job (of which I am not proud):
 
-{% highlight ruby linenos %}
+{% highlight ruby %}
 #! /bin/bash
 url="http://rez.urbanspoon.com/b/widget/2086?background=ebf3fd&
 border=bbd4f1&header=000&link=0144a7&locale=en&source=selfhost&text=000"

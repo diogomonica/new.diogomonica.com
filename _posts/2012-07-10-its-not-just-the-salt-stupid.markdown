@@ -34,4 +34,4 @@ This has been said a million times, but it needs to be said once more: you shoul
 
 Your choice should be between [Bcrypt](http://en.wikipedia.org/wiki/Bcrypt "Bcrypt"), [Scrypt](http://www.bsdcan.org/2009/schedule/events/147.en.html "Scrypt") and [PBKDF2](http://en.wikipedia.org/wiki/PBKDF2 "PBKDF2"). There are [some](http://www.unlimitednovelty.com/2012/03/dont-use-bcrypt.html) that argue that you shouldn't use Bcrypt. However, while Scrypt seems to be stronger than Bcrypt, it is also more recent - and in crypto you should also have a healthy fear of new algorithms. As for PBKDF2, it is a NIST standard but doesn't have as many good implementations as Bcrypt. Overall, the choice between the three isn't really relevant, but please make sure you use any one of them.
 
-<img src="http://imgs.xkcd.com/comics/security.png" style="center;margin:0px 30px 100px 270px;" />
+<img src="/images/not-just-the-salt/security.png" />
