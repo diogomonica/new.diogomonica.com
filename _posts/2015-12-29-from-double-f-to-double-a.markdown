@@ -121,7 +121,7 @@ add_header Public-Key-Pins max-age=0;
 
 ## What about getting an A+ on SSL Labs?
 
-If you're ok with an A, use [cloudflare](https://cloudflare.com). If you really want that A+, you can follow [this post](https://sethvargo.com/getting-an-a-plus-on-qualys-ssl-labs-tester/).
+If you're ok with an A, use [cloudflare](https://cloudflare.com). If you really want that A+, you can follow [this post](https://sethvargo.com/getting-an-a-plus-on-qualys-ssl-labs-tester/). **Edit**: @asaaki pointed out that you can also get an A+ on Cloudflare, as long as you have HSTS set to 180+ days.
 
 ## Conclusion
 
